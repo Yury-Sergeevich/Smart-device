@@ -1,0 +1,58 @@
+.site-section h2 {
+  margin: 0 0 20px 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.site-section__wrapper {
+  width: 470px;
+  display: flex;
+
+  @media (max-width: 1023px) {
+    width: 220px;
+    flex-direction: column;
+  }
+}
+
+.site-section__list-about {
+  margin-right: 30px;
+}
+
+.site-section__list-about,
+.site-section__list-contacts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-section__list-about li {
+  width: 220px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.site-section__list-contacts li {
+  width: 220px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.site-section__list-about a {
+  line-height: 135%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.site-section__list-contacts a {
+  line-height: 135%;
+  color: rgba(255, 255, 255, 0.7);
+}

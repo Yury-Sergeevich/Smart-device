@@ -1,0 +1,47 @@
+.site-section__wrapper {
+  @media (max-width: 1023px) {
+    width: 320px;
+    flex-direction: column;
+  }
+}
+
+.address h2 {
+  margin: 0 0 20px 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.address__phone-list {
+  margin: 0;
+  padding: 0;
+}
+
+.address__phone-list li {
+  width: 345px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.address__phone-list a {
+  line-height: 135%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.address address {
+  width: 345px;
+  font-style: normal;
+  line-height: 135%;
+  color: rgba(255, 255, 255, 0.7);
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

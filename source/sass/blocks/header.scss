@@ -2,6 +2,52 @@
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 }
 
-.header .container {
-  padding: 30px 0 35px 0;
+.header__container {
+  display: flex;
+  align-items: center;
+  padding: 27px 0 35px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media (max-width: 1199.9px) {
+    max-width: 1024px;
+    justify-content: space-between;
+  }
+}
+
+.header__user-nav {
+  margin-right: 147px;
+
+  @media (max-width: 1199.9px) {
+    margin: 0;
+  }
+}
+
+.header__button {
+  cursor: pointer;
+  outline: 1px solid #f2f5f7;
+  border-radius: 3px;
+  padding: 0;
+
+  &--order-call {
+    width: 160px;
+    height: 40px;
+    background: transparent;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #f2f5f7;
+  }
+
+  @media (max-width: 1199.9px) {
+    display: none;
+  }
+
+  &:focus {
+    outline: 1px solid #358cbe;
+  }
 }

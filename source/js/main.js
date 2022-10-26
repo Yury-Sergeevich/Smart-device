@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-
+import {openModal} from './modules/modals/modal';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
 
+  openModal();
   iosVhFix();
 
   // Modules

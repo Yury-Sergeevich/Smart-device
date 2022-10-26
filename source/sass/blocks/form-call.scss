@@ -1,0 +1,110 @@
+.form-call {
+  padding: 40px 0 0 0;
+}
+
+.form-call__field input {
+  border: none;
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  padding: 15px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  outline: none;
+
+  &::placeholder {
+    color: #ffffff;
+  }
+
+  &:hover {
+    background: rgba(22, 64, 116, 0.55);
+  }
+
+  &:active {
+    background: rgba(40, 101, 175, 0.55);
+  }
+
+  &:focus {
+    outline: 2px solid #041427;
+  }
+}
+
+.form-call__field-description textarea {
+  border: none;
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  padding: 15px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  outline: none;
+
+  &::placeholder {
+    color: #ffffff;
+  }
+
+  &:hover {
+    background: rgba(22, 64, 116, 0.55);
+  }
+
+  &:focus {
+    outline: 2px solid #041427;
+  }
+}
+
+.form-call__button-submit {
+  border: none;
+  background: #041427;
+  border-radius: 3px;
+  padding: 15px 60px;
+  width: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  outline: none;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  &:focus {
+    outline: 1px solid #ffffff;
+  }
+}
+
+.form-call__input-check label {
+  cursor: pointer;
+  padding: 0 0 0 25px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.form-call__input-check input {
+  position: absolute;
+  appearance: none;
+  outline: none;
+
+  &:checked + span {
+    background: url("../../img/svg/check-yes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
+    background-size: 10px 7px;
+  }
+}
+
+.form-call__input-check span {
+  margin: 0 0 0 -20px;
+  position: absolute;
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+}

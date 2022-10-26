@@ -12,14 +12,19 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__container">
-          <a class="header__logo logo" href="index.html">
-            <img class="logo__icon-logo" src="../img/svg/logo.svg" width="215" height="55" alt="Логотип сайта Smart Divice">
-          </a>
+          <div class="header__logo logo">
+            <a href="index.html">
+              <picture>
+                <source media="(max-width: 767px )" srcset="./img/svg/logo-320.svg">
+                <img src="../img/svg/logo.svg" width="215" height="55" alt="Логотип сайта Smart Divice">
+              </picture>
+            </a>
+          </div>
           <nav class="header__user-nav user-nav" aria-label="Основная.">
             <ul class="user-nav__list">
               <li>
                 <a href="mailto:info@sd.ru">
-                  <svg class="user-nav__link-icon" width="20" height="20">
+                  <svg class="user-nav__link-icon" width="20" height="20" role="img" aria-label="Напишите нам.">
                     <use xlink:href="img/sprite_auto.svg#email"></use>
                   </svg>
                   <span>info@sd.ru</span>
@@ -27,7 +32,7 @@
               </li>
               <li class="user-nav__item">
                 <a class="user-nav__link" href="tel:74950005252">
-                  <svg class="user-nav__link-icon" width="20" height="20">
+                  <svg class="user-nav__link-icon" width="20" height="20" role="img" aria-label="Позвоните нам." title="gjpdjybnt yfv">
                     <use xlink:href="img/sprite_auto.svg#phone"></use>
                   </svg>
                   <span>+7 (495) 000 52 52</span>
@@ -35,7 +40,7 @@
               </li>
             </ul>
           </nav>
-          <button class="header__button header__button--order-call">заказaть звонок</button>
+          <button class="header__button header__button--order-call" type="button">заказaть звонок</button>
         </div>
       </header>
       <main>
@@ -43,35 +48,42 @@
       <footer>
         <div class="container"></div>
       </footer>
-    </div>
 
-    <!-- Модалки
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
+      <!-- модальное окно -->
+      <div class="modal-container modal-container--close">
+        <div class="modal-container__modal modal">
+          <button class="modal__close-button" type="button">
+            <span class="visually-hidden">закрыть</span>
           </button>
+          <div class="modal__content">
+            <h2>Закажите звонок</h2>
+            <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+            <form class="modal__order-call form-call" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="form-call__field">
+                <input type="text" name="name" placeholder="Имя" required autocomplete="off">
+              </div>
+              <div class="form-call__field">
+                <input type="text" name="phone" placeholder="Телефон" required autocomplete="off">
+              </div>
+              <div class="form-call__field-description">
+                <textarea name="description" cols="30" rows="10"></textarea>
+              </div>
+              <button class="form-call__button-submit" type="submit">
+                отправить
+              </button>
+              <div class="form-call__input-check">
+                <label>
+                  <input type="checkbox" name="personal-data" required checked>
+                  <span></span>
+                  Я согласен на обработку  персональных данных
+                </label>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
+    <script src="./js/main.js"></script>
   </body>
 </html>

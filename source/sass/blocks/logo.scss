@@ -2,18 +2,24 @@
   padding: 1px 0 0 0;
   width: 215px;
   display: flex;
-  margin-right: 160px;
   outline: none;
+
+  @media (max-width: 767px) {
+    width: 35px;
+  }
 
   &:focus {
     outline: 1px solid #358cbe;
   }
 
-  @media (max-width: 1199.9px) {
+  @media (max-width: 1023px) {
     margin: 0;
   }
 }
 
-.logo__icon-logo {
-  margin-right: 15px;
+.logo img {
+  @media (max-width: 767px) {
+    width: 35px;
+    height: 35px;
+  }
 }

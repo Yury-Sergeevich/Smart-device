@@ -9,21 +9,37 @@
   max-width: 1200px;
   margin: 0 auto;
 
-  @media (max-width: 1199.9px) {
-    max-width: 1024px;
+  @media (max-width: 1023px) {
+    padding: 20px 50px 25px 50px;
+    max-width: 1023px;
     justify-content: space-between;
+  }
+
+  @media (max-width: 767px) {
+    padding: 15px 35px 20px 26px;
+    max-width: 1023px;
+    justify-content: space-between;
+  }
+}
+
+.header__logo {
+  margin-right: 160px;
+
+  @media (max-width: 1023px) {
+    margin: 0;
   }
 }
 
 .header__user-nav {
   margin-right: 147px;
 
-  @media (max-width: 1199.9px) {
+  @media (max-width: 1023px) {
     margin: 0;
   }
 }
 
 .header__button {
+  box-sizing: border-box;
   cursor: pointer;
   outline: 1px solid #f2f5f7;
   border-radius: 3px;
@@ -43,8 +59,12 @@
     color: #f2f5f7;
   }
 
-  @media (max-width: 1199.9px) {
+  @media (max-width: 1023px) {
     display: none;
+  }
+
+  &:hover {
+    background: #358cbe;
   }
 
   &:focus {

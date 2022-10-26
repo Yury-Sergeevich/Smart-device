@@ -426,9 +426,9 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
-  font-family: "Placeholder", "Arial", sans-serif;
-  color: #000000;
+  line-height: 21.5px;
+  font-family: "PTMono-Regular", "Arial", sans-serif;
+  color: #041827;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -626,9 +626,8 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
 }
 
 .btn {
@@ -768,6 +767,44 @@ button,
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.header {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
+  background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+}
+
+.header .container {
+  padding: 30px 0 35px 0;
+}
+
+.logo {
+  width: 215px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo__icon-logo {
+  margin-right: 15px;
+}
+
+.logo__title p {
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  color: #f2f5f7;
+  margin: 0 0 5px 0;
+}
+
+.logo__title span {
+  font-family: "Roboto-Regular", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* @mixin hover-focus {

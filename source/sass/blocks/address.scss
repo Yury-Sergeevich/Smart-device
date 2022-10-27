@@ -3,11 +3,45 @@
 
   @media (max-width: 767px) {
     padding: 0 25px 20px 25px;
-    display: none;
+
+    &--close {
+      display: none;
+    }
   }
 }
 
-.address h2 {
+.address__control-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 767px) {
+    padding: 20px 27px 15px 25px;
+  }
+}
+
+.address__control-button {
+  display: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 15px;
+  height: 15px;
+
+  @media (max-width: 767px) {
+    &--open {
+      display: block;
+      background: url("../img/svg/minus.svg") no-repeat;
+    }
+
+    &--close {
+      display: block;
+      background: url("../img/svg/plus.svg") no-repeat;
+    }
+  }
+}
+
+.address__control-title h2 {
   position: relative;
   margin: 0 0 20px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -18,23 +52,8 @@
   color: #ffffff;
 
   @media (max-width: 767px) {
-    padding: 20px 0 15px 25px;
     margin: 0;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 20px;
-      right: 27px;
-      width: 15px;
-      height: 15px;
-      background: url("../img/svg/minus.svg") no-repeat;
-    }
   }
-}
-
-.address__button-control {
-  display: inline-block;
 }
 
 .address address {

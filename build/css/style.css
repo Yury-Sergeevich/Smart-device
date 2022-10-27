@@ -1081,7 +1081,16 @@ button,
   gap: 30px;
 }
 
-.section-site h2 {
+.section-site__button {
+  display: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 15px;
+  height: 15px;
+}
+
+.section-site__control-title h2 {
   position: relative;
   margin: 0 0 20px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1106,6 +1115,9 @@ button,
   display: block;
   line-height: 135%;
   color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 .section-site__item a:hover {
@@ -1113,7 +1125,7 @@ button,
 }
 
 .section-site__item a:active {
-  color: #286c93;
+  color: #ffffff;
 }
 
 .section-site__item a:focus {
@@ -1124,7 +1136,28 @@ button,
   width: 320px;
 }
 
-.address h2 {
+.address__control-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.address__control-button {
+  display: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 15px;
+  height: 15px;
+}
+
+.address__control-title h2 {
   position: relative;
   margin: 0 0 20px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1133,10 +1166,6 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.address__button-control {
-  display: inline-block;
 }
 
 .address address {
@@ -1381,22 +1410,34 @@ button,
 
   .section-site__wrapper {
     padding: 0 25px 20px 25px;
+  }
+
+  .section-site__wrapper--close {
     display: none;
   }
 
-  .section-site h2 {
-    padding: 20px 0 20px 25px;
-    margin: 0;
+  .section-site__control-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 20px 26px 20px 25px;
   }
 
-  .section-site h2::before {
-    content: "";
-    position: absolute;
-    top: 20px;
-    right: 27px;
-    width: 15px;
-    height: 15px;
+  .section-site__button--open {
+    display: block;
+    background: url("../img/svg/minus.svg") no-repeat;
+  }
+
+  .section-site__button--close {
+    display: block;
     background: url("../img/svg/plus.svg") no-repeat;
+  }
+
+  .section-site__control-title h2 {
+    margin: 0;
   }
 
   .section-site__item a {
@@ -1406,22 +1447,28 @@ button,
 
   .address__wrapper {
     padding: 0 25px 20px 25px;
+  }
+
+  .address__wrapper--close {
     display: none;
   }
 
-  .address h2 {
-    padding: 20px 0 15px 25px;
-    margin: 0;
+  .address__control-title {
+    padding: 20px 27px 15px 25px;
   }
 
-  .address h2::before {
-    content: "";
-    position: absolute;
-    top: 20px;
-    right: 27px;
-    width: 15px;
-    height: 15px;
+  .address__control-button--open {
+    display: block;
     background: url("../img/svg/minus.svg") no-repeat;
+  }
+
+  .address__control-button--close {
+    display: block;
+    background: url("../img/svg/plus.svg") no-repeat;
+  }
+
+  .address__control-title h2 {
+    margin: 0;
   }
 
   .address address {

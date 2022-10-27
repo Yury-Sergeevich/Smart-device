@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {openModal} from './modules/modals/modal';
+import {openSectionSite} from './modules/acardeon';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -8,6 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   openModal();
+  openSectionSite();
   iosVhFix();
 
   // Modules

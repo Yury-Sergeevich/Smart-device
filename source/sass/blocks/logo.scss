@@ -2,14 +2,9 @@
   padding: 1px 0 0 0;
   width: 215px;
   display: flex;
-  outline: none;
 
   @media (max-width: 767px) {
     width: 35px;
-  }
-
-  &:focus {
-    outline: 1px solid #358cbe;
   }
 
   @media (max-width: 1023px) {

@@ -703,6 +703,14 @@ button,
   margin-right: 160px;
 }
 
+.header__logo a {
+  outline: none;
+}
+
+.header__logo a:focus {
+  outline: 1px solid #358cbe;
+}
+
 .header__user-nav {
   margin-right: 147px;
 }
@@ -744,11 +752,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  outline: none;
-}
-
-.logo:focus {
-  outline: 1px solid #358cbe;
 }
 
 .user-nav {
@@ -782,6 +785,10 @@ button,
   display: flex;
   padding: 12px 0 12px 0;
   outline: none;
+}
+
+.user-nav a:hover {
+  background: rgba(10, 48, 94, 0.6);
 }
 
 .user-nav a:focus {
@@ -861,6 +868,7 @@ button,
   cursor: pointer;
   margin-bottom: 20px;
   outline: none;
+  color: #ffffff;
 }
 
 .form-call__field input::-webkit-input-placeholder {
@@ -892,7 +900,7 @@ button,
 }
 
 .form-call__field input:focus {
-  outline: 2px solid #041427;
+  outline: 1px solid #041427;
 }
 
 .form-call__field-description textarea {

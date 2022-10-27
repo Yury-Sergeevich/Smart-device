@@ -12,6 +12,7 @@
   cursor: pointer;
   margin-bottom: 20px;
   outline: none;
+  color: #ffffff;
 
   &::placeholder {
     color: #ffffff;
@@ -26,7 +27,7 @@
   }
 
   &:focus {
-    outline: 2px solid #041427;
+    outline: 1px solid #041427;
   }
 }
 

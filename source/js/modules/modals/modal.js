@@ -20,7 +20,7 @@ function openModal() {
     modalWindow.classList.add('modal-container--close');
   });
 
-  modalContainer.addEventListener('click', function (event) {
+  modalContainer.addEventListener('click', (event) => {
     event.stopPropagation();
   });
 }

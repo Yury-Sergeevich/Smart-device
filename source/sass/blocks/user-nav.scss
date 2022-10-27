@@ -31,6 +31,10 @@
   padding: 12px 0 12px 0;
   outline: none;
 
+  &:hover {
+    background: rgb(10, 48, 94, 0.6);
+  }
+
   &:focus {
     outline: 1px solid #358cbe;
   }

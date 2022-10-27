@@ -12,6 +12,10 @@
     align-items: center;
     padding: 0;
   }
+
+  @media (max-width: 767px) {
+    margin: 0 auto;
+  }
 }
 
 .social__item a {
@@ -19,4 +23,18 @@
   padding: 5px;
   width: 40px;
   height: 40px;
+  outline: none;
+  fill: #f8fdff;
+
+  &:hover {
+    fill: #5db5e8;
+  }
+
+  &:active {
+    fill: #286c93;
+  }
+
+  &:focus {
+    outline: 1px solid #358cbe;
+  }
 }

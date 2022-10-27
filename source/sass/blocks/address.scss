@@ -1,8 +1,14 @@
 .address__wrapper {
   width: 320px;
+
+  @media (max-width: 767px) {
+    padding: 0 25px 20px 25px;
+    display: none;
+  }
 }
 
 .address h2 {
+  position: relative;
   margin: 0 0 20px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 15px;
@@ -10,15 +16,37 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media (max-width: 767px) {
+    padding: 20px 0 15px 25px;
+    margin: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      right: 27px;
+      width: 15px;
+      height: 15px;
+      background: url("../img/svg/minus.svg") no-repeat;
+    }
+  }
+}
+
+.address__button-control {
+  display: inline-block;
 }
 
 .address address {
   font-style: normal;
   line-height: 135%;
   color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
 
-  &:not(:last-child) {
-    margin-bottom: 10px;
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 135%;
+    margin-bottom: 15px;
   }
 }
 
@@ -37,4 +65,21 @@
 .address__phone-item a {
   line-height: 135%;
   color: rgba(255, 255, 255, 0.7);
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  &:hover {
+    color: #358cbe;
+  }
+
+  &:active {
+    color: #286c93;
+  }
+
+  &:focus {
+    outline: 1px solid #358cbe;
+  }
 }

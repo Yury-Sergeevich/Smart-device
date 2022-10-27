@@ -47,86 +47,83 @@
       </main>
       <footer class="footer">
         <div class="footer__container">
-          <div class="footer__logo logo">
-            <a href="index.html">
-              <picture>
-                <source media="(max-width: 767px )" srcset="./img/svg/logo-320.svg">
-                <img src="../img/svg/logo.svg" width="215" height="55" alt="Логотип сайта Smart Divice">
-              </picture>
-            </a>
-            <div class="footer__social">
-              <ul class="footer__social-list">
-                <li>
-                  <a href="#">
-                    <svg class="footer__social-icon" width="30" height="30">
-                      <use xlink:href="img/sprite_auto.svg#ok"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg class="footer__social-icon" width="30" height="30">
-                      <use xlink:href="img/sprite_auto.svg#vk"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg class="footer__social-icon" width="30" height="30">
-                      <use xlink:href="img/sprite_auto.svg#pinteres"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+          <div class="footer__logo-wrapper">
+            <div class="footer__logo">
+              <img src="../img/svg/logo.svg" width="215"  height="55" alt="Логотип сайта Smart Divice">
+            </div>
+            <ul class="footer__social-list social">
+              <li class="social__item">
+                <a href="#">
+                  <svg width="30" height="30" role="img" aria-label="Мы в одноклассниках.">
+                    <use xlink:href="img/sprite_auto.svg#ok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#">
+                  <svg width="30" height="30" role="img" aria-label="Мы в контакте.">
+                    <use xlink:href="img/sprite_auto.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#">
+                  <svg width="30" height="30" role="img" aria-label="Мыв Pinteres.">
+                    <use xlink:href="img/sprite_auto.svg#pinteres"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__section-wrapper">
+            <div class="footer__section-site section-site">
+              <h2>Разделы сайта</h2>
+              <div class="section-site__wrapper">
+                <ul class="section-site__list">
+                  <li class="section-site__item">
+                    <a href="#">О Компании</a>
+                  </li>
+                  <li class="section-site__item">
+                    <a href="#">Продукты</a>
+                  </li>
+                  <li class="section-site__item">
+                    <a href="#">Производство печатных плат</a>
+                  </li>
+                  <li class="section-site__item">
+                    <a href="#">Монтаж печатных плат</a>
+                  </li>
+                </ul>
+                <ul class="section-site__list">
+                  <li class="section-site__item">
+                    <a href="#">Комплектующие</a>
+                  </li>
+                  <li class="section-site__item">
+                    <a href="#">Доставка</a>
+                  </li>
+                  <li class="section-site__item">
+                    <a href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__address address">
+              <h2>наш офис</h2>
+              <div class="address__wrapper">
+                <address>г. Мытищи, Олимпийский проспект, д.10</address>
+                <ul class="address__phone-list">
+                  <li class="address__phone-item">
+                    <a href="tel:74955894050">+7 (495) 589-40-50</a>
+                  </li>
+                  <li class="address__phone-item">
+                    <a href="tel:79253895829">+7 (925) 389-58-29</a>
+                  </li>
+                  <li class="address__phone-item">
+                    <a href="tel:79253647813">+7 (925) 364-78-13</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <section class="footer__site-section site-section">
-            <h2>разделы сайта</h2>
-            <div class="site-section__wrapper">
-              <ul class="site-section__list-about">
-                <li>
-                  <a href="#">О Компании</a>
-                </li>
-                <li>
-                  <a href="#">Продукты</a>
-                </li>
-                <li>
-                  <a href="#">Производство печатных плат</a>
-                </li>
-                <li>
-                  <a href="#">Монтаж печатных плат</a>
-                </li>
-              </ul>
-              <ul class="site-section__list-contacts">
-                <li>
-                  <a href="#">Комплектующие</a>
-                </li>
-                <li>
-                  <a href="#">Доставка</a>
-                </li>
-                <li>
-                  <a href="#">Контакты</a>
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section class="footer__address address">
-            <h2>наш офис</h2>
-            <div class="address__wrapper">
-              <address>г. Мытищи, Олимпийский проспект, д.10</address>
-              <ul class="address__phone-list">
-                <li>
-                  <a href="tel:74955894050">+7 (495) 589-40-50</a>
-                </li>
-                <li>
-                  <a href="tel:79253895829">+7 (925) 389-58-29</a>
-                </li>
-                <li>
-                  <a href="tel:79253647813">+7 (925) 364-78-13</a>
-                </li>
-              </ul>
-            </div>
-          </section>
         </div>
       </footer>
 
@@ -165,6 +162,6 @@
       </div>
     </div>
 
-    <script src="./js/main.js"></script>
+    <script src="./js/main.min.js"></script>
   </body>
 </html>

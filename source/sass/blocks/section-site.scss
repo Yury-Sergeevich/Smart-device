@@ -1,0 +1,42 @@
+.section-site__wrapper {
+  display: flex;
+  gap: 30px;
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.section-site h2 {
+  width: 220px;
+  margin: 0 0 20px 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.section-site__list {
+  margin: 0;
+  padding: 0;
+  width: 220px;
+}
+
+.section-site__item {
+  &:not(:last-child) {
+    margin: 0 0 10px 0;
+  }
+
+  @media (max-width: 1023px) {
+    margin: 0 0 10px 0;
+  }
+}
+
+.section-site__item a {
+  display: block;
+  line-height: 135%;
+  color: rgba(255, 255, 255, 0.7);
+}

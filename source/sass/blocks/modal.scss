@@ -16,9 +16,10 @@
   background-position: center;
   cursor: pointer;
   outline: none;
+  transition: 0.3s ease-in;
 
   &:hover {
-    transform: scale(1);
+    transform: rotate(360deg);
   }
 
   &:focus {

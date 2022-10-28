@@ -45,7 +45,7 @@
   }
 
   @media (max-width: 767px) {
-    width: 270px;
+    width: 100%;
     font-size: 36px;
     line-height: 42px;
   }
@@ -59,12 +59,12 @@
   color: #f2f5f7;
 
   @media (max-width: 1023px) {
+    width: 100%;
     margin: 0 0 50px 0;
   }
 
   @media (max-width: 767px) {
     font-size: 14px;
-    width: 270px;
   }
 }
 
@@ -75,8 +75,13 @@
   border-radius: 3px;
   background: #00b2ff;
 
+  @media (max-width: 1023px) {
+    margin-left: 45px;
+  }
+
   @media (max-width: 767px) {
     width: 100%;
+    margin-left: 0;
   }
 }
 

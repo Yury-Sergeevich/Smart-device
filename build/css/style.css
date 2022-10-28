@@ -1389,7 +1389,12 @@ button,
   }
 
   .promo__content p {
+    width: 100%;
     margin: 0 0 50px 0;
+  }
+
+  .promo__button {
+    margin-left: 45px;
   }
 
   .promo__button-decription {
@@ -1476,18 +1481,18 @@ button,
   }
 
   .promo__content h2 {
-    width: 270px;
+    width: 100%;
     font-size: 36px;
     line-height: 42px;
   }
 
   .promo__content p {
     font-size: 14px;
-    width: 270px;
   }
 
   .promo__button {
     width: 100%;
+    margin-left: 0;
   }
 
   .promo__button-decription {

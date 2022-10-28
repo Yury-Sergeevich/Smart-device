@@ -746,8 +746,13 @@ button,
   outline: 1px solid #a9d3eb;
 }
 
+.header__button:active {
+  background: #006590;
+  outline: 1px solid #a9d3eb;
+}
+
 .header__button:focus {
-  outline: 1px solid #358cbe;
+  outline: 1px solid #3972c1;
 }
 
 .logo {
@@ -1059,6 +1064,19 @@ button,
   border-radius: 3px;
   background: #00b2ff;
   outline: none;
+  cursor: pointer;
+}
+
+.promo__button:hover {
+  background: #008bc7;
+}
+
+.promo__button:active {
+  background: #006590;
+}
+
+.promo__button:focus {
+  outline: 1px solid #ffffff;
 }
 
 .promo__button-decription {

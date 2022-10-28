@@ -75,6 +75,7 @@
   border-radius: 3px;
   background: #00b2ff;
   outline: none;
+  cursor: pointer;
 
   @media (max-width: 1023px) {
     margin-left: 45px;
@@ -83,6 +84,18 @@
   @media (max-width: 767px) {
     width: 100%;
     margin-left: 0;
+  }
+
+  &:hover {
+    background: #008bc7;
+  }
+
+  &:active {
+    background: #006590;
+  }
+
+  &:focus {
+    outline: 1px solid #ffffff;
   }
 }
 

@@ -84,7 +84,12 @@
     outline: 1px solid #a9d3eb;
   }
 
+  &:active {
+    background: #006590;
+    outline: 1px solid #a9d3eb;
+  }
+
   &:focus {
-    outline: 1px solid #358cbe;
+    outline: 1px solid #3972c1;
   }
 }

@@ -718,6 +718,7 @@ button,
 }
 
 .header__button {
+  border: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   cursor: pointer;
@@ -742,6 +743,7 @@ button,
 
 .header__button:hover {
   background: #358cbe;
+  outline: 1px solid #a9d3eb;
 }
 
 .header__button:focus {
@@ -792,7 +794,11 @@ button,
 }
 
 .user-nav a:hover {
-  background: rgba(10, 48, 94, 0.6);
+  background: rgba(20, 87, 170, 0.6);
+}
+
+.user-nav a:active {
+  background: rgba(29, 118, 227, 0.6);
 }
 
 .user-nav a:focus {
@@ -1052,6 +1058,7 @@ button,
   border: none;
   border-radius: 3px;
   background: #00b2ff;
+  outline: none;
 }
 
 .promo__button-decription {
@@ -1366,7 +1373,12 @@ button,
 
   .user-nav a {
     width: 40px;
-    display: block;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .user-nav__link-icon {
+    margin-right: 0;
   }
 
   .user-nav span {

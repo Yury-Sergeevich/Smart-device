@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="wrapper__header header">
         <div class="header__container">
           <div class="header__logo logo">
             <a href="index.html">
@@ -22,7 +22,7 @@
           </div>
           <nav class="header__user-nav user-nav" aria-label="Основная.">
             <ul class="user-nav__list">
-              <li>
+              <li class="user-nav__item">
                 <a href="mailto:info@sd.ru">
                   <svg class="user-nav__link-icon" width="20" height="20" role="img" aria-label="Напишите нам.">
                     <use xlink:href="img/sprite_auto.svg#email"></use>
@@ -31,7 +31,7 @@
                 </a>
               </li>
               <li class="user-nav__item">
-                <a class="user-nav__link" href="tel:74950005252">
+                <a href="tel:74950005252">
                   <svg class="user-nav__link-icon" width="20" height="20" role="img" aria-label="Позвоните нам." title="gjpdjybnt yfv">
                     <use xlink:href="img/sprite_auto.svg#phone"></use>
                   </svg>
@@ -43,7 +43,20 @@
           <button class="header__button header__button--order-call" type="button">заказaть звонок</button>
         </div>
       </header>
-      <main>
+      <main class="wrapper__main main">
+        <section class="main__promo promo">
+          <h2 class="visually-hidden">Промо продукции</h2>
+          <div class="promo__container">
+            <div class="promo__content">
+              <h2>Печатные платы</h2>
+              <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+              <button class="promo__button" type="button">
+                <span class="promo__button-decription">Получить бесплатную консультацию</span>
+                <span class="promo__button-decription promo__button-decription--mobile">Получить консультацию</span>
+              </button>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="footer__container">

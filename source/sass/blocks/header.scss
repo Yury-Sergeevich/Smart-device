@@ -1,5 +1,12 @@
 .header {
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  position: fixed;
+  width: 100%;
+
+  @media (max-width: 1023px) {
+    position: static;
+    z-index: 1;
+  }
 }
 
 .header__container {
@@ -39,7 +46,7 @@
 }
 
 .header__user-nav {
-  margin-right: 147px;
+  margin-right: auto;
 
   @media (max-width: 1023px) {
     margin: 0;

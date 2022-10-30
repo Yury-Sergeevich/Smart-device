@@ -1,9 +1,15 @@
-// .advantages {
-// }
 .advantages__container {
   max-width: 1262px;
   margin: 0 auto;
   padding: 120px 20px;
+
+  @media (max-width: 1023px) {
+    padding: 80px 50px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 50px 25px;
+  }
 }
 
 .advantages__list {
@@ -15,11 +21,21 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 31px 30px;
+
+  @media (max-width: 1023px) {
+    gap: 30px 29px;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: none;
+  }
 }
 
 .advatages__item {
+  position: relative;
   cursor: pointer;
   outline: 1px solid #ebebeb;
+  min-height: 300px;
   transition: 0.2s ease-in;
 
   &--active {
@@ -45,10 +61,73 @@
       color: #f2f5f7;
     }
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: #00b2ff;
+  }
 }
 
 .advantages__item-content {
-  padding: 40px 45px 35px 45px;
+  position: relative;
+  padding: 95px 45px 35px 45px;
+
+  &--stopwatch {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      top: 40px;
+      left: 45px;
+      background: url("../img/svg/stopwatch.svg") no-repeat;
+    }
+  }
+
+  &--hired {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      top: 40px;
+      left: 45px;
+      background: url("../img/svg/hired.svg") no-repeat;
+    }
+  }
+
+  &--detective {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      top: 40px;
+      left: 45px;
+      background: url("../img/svg/detective.svg") no-repeat;
+    }
+  }
+
+  &--tag {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      top: 40px;
+      left: 45px;
+      background: url("../img/svg/tag.svg") no-repeat;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 50px 30px 35px 30px;
+  }
 }
 
 .advantages__item-content h2 {

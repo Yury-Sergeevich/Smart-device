@@ -2,6 +2,7 @@
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   position: fixed;
   width: 100%;
+  z-index: 1;
 
   @media (max-width: 1023px) {
     position: static;
@@ -80,8 +81,8 @@
   }
 
   &:hover {
-    background: #358cbe;
-    outline: 1px solid #a9d3eb;
+    background: #008bc7;
+    outline: none;
   }
 
   &:active {

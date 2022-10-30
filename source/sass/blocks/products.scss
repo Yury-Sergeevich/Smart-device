@@ -1,0 +1,130 @@
+.products {
+  background: #041827;
+  padding: 70px 0 140px 0;
+
+  @media (max-width: 1023px) {
+    padding: 60px 50px 75px 50px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 50px 25px 86px 25px;
+  }
+}
+
+.products__container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (max-width: 1023px) {
+    padding: 0;
+  }
+}
+
+.products__container h2 {
+  margin: 0 0 50px 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+
+  @media (max-width: 767px) {
+    margin: 0 0 40px 0;
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+}
+
+.products__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, minmax(250px, 350px));
+  gap: 85px;
+
+  @media (max-width: 1023px) {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.products__item {
+  background: url("../img/background/products-image.jpg") no-repeat;
+  background-size: cover;
+
+  &--production {
+    background-position: 16.5% 69%;
+  }
+
+  &--montage {
+    background-position: 46.7% 72%;
+  }
+
+  &--accessories {
+    background-position: 78.1% 65.3%;
+  }
+
+  @media (max-width: 1023px) {
+    &--production {
+      background-position: 29.5% 96.5%;
+    }
+
+    &--montage {
+      background-position: 76% 55%;
+    }
+
+    &--accessories {
+      background-position: 18% 63%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &--production {
+      background-position: 30.6% 52.7%;
+    }
+
+    &--montage {
+      background-position: 29.7% 94.5%;
+    }
+
+    &--accessories {
+      background-position: 72.3% 69.6%;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/products-image@2x.jpg");
+  }
+}
+
+.products__item a {
+  position: relative;
+  display: block;
+  min-height: 650px;
+  padding: 47px 0 60px 40px;
+  background-color: rgba(4, 24, 39, 0.5);
+
+  @media (max-width: 1023px) {
+    min-height: 250px;
+    padding: 40px 0 60px 45px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 30px 0 60px 30px;
+  }
+}
+
+.products__item h3 {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+    line-height: 30px;
+    width: 150px;
+  }
+}

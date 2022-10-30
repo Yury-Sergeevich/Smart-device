@@ -1,0 +1,120 @@
+.about__container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 20px 100px;
+  display: flex;
+
+  @media (max-width: 1023px) {
+    padding: 0 50px 80px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 25px 80px;
+  }
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__year p {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 156px;
+  line-height: 180px;
+  margin: 0 100px 0 0;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: transparent;
+  background: url("../img/background/about-background.png") repeat;
+  background-clip: text;
+
+  @media (max-width: 1023px) {
+    margin: 0 29px 0 0;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.about__description {
+  min-height: 170px;
+  margin-bottom: 20px;
+}
+
+.about__description h2 {
+  margin: 0 0 15px 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+  color: #041827;
+}
+
+.about__description p {
+  margin: 0;
+  color: #041827;
+
+  &:nth-child(2) {
+    margin-bottom: 25px;
+  }
+
+  &:nth-child(3) {
+    margin-bottom: 25px;
+
+    @media (max-width: 1023px) {
+      margin: 0;
+    }
+  }
+}
+
+.about__detail {
+  &--close {
+    display: none;
+  }
+}
+
+.about__detail-button {
+  width: 180px;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background: transparent;
+  outline: 1px solid #00b2ff;
+  margin-left: 38px;
+
+  @media (max-width: 1023px) {
+    margin: 0;
+  }
+
+  &:hover {
+    background: #00b2ff;
+    box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  }
+
+  &:hover .about__button-text {
+    color: #ffffff;
+  }
+
+  &:active {
+    background: #008ac5;
+    box-shadow: none;
+  }
+}
+
+.about__button-text {
+  display: block;
+  padding: 14px 13px 14px 12px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #00b2ff;
+}
+
+.about__detail-hidden {
+  display: none;
+}

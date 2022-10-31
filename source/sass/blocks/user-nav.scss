@@ -5,6 +5,10 @@
   @media (max-width: 1023px) {
     width: 117px;
   }
+
+  @media (max-width: 767px) {
+    width: 100px;
+  }
 }
 
 .user-nav__list {
@@ -15,6 +19,10 @@
 
   @media (max-width: 1023px) {
     padding: 0 0 6px 0;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0;
   }
 }
 
@@ -40,6 +48,10 @@
     width: 40px;
     height: 40px;
     padding: 10px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 7px 9px;
   }
 
   &:hover {

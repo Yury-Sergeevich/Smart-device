@@ -31,6 +31,7 @@
 
   @media (max-width: 767px) {
     padding: 35px 0 0 0;
+    margin: 0 0 20px 0;
     flex-direction: column;
   }
 }
@@ -38,7 +39,7 @@
 .footer__logo {
   @media (max-width: 767px) {
     width: 215px;
-    margin: 0 auto 15px;
+    margin: 0 auto 10px;
   }
 
   &:focus {

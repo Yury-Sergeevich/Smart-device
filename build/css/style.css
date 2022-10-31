@@ -1225,6 +1225,7 @@ button,
 
 .advantages__item-content p {
   margin: 0;
+  font-size: 14px;
   line-height: 135%;
   color: #041827;
 }
@@ -1349,12 +1350,16 @@ button,
   padding: 0 20px;
 }
 
-.products__container h2 {
+.products__title {
   margin: 0 0 50px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   line-height: 51px;
   color: #ffffff;
+}
+
+.products__title-mobile {
+  display: none;
 }
 
 .products__list {
@@ -2002,7 +2007,7 @@ button,
     padding: 0;
   }
 
-  .products__container h2 {
+  .products__title {
     margin: 0 0 38px 0;
   }
 
@@ -2163,7 +2168,7 @@ button,
   }
 
   .header__container {
-    padding: 15px 35px 20px 26px;
+    padding: 13px 35px 20px 26px;
     max-width: 1023px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -2179,18 +2184,33 @@ button,
     height: 35px;
   }
 
+  .user-nav {
+    width: 100px;
+  }
+
+  .user-nav__list {
+    padding: 0;
+  }
+
+  .user-nav a {
+    padding: 7px 9px;
+  }
+
   .promo__content {
-    padding: 80px 25px 190px 25px;
+    padding: 91px 25px 192px 25px;
   }
 
   .promo__content h2 {
     width: 100%;
-    font-size: 36px;
+    font-size: 35px;
     line-height: 42px;
+    letter-spacing: 0.2rem;
+    margin-bottom: 9px;
   }
 
   .promo__content p {
     font-size: 14px;
+    margin: 0 0 46px 0;
   }
 
   .promo__button {
@@ -2218,26 +2238,76 @@ button,
     grid-template-columns: none;
   }
 
+  .advantages__item-content--stopwatch::before {
+    top: 28px;
+    left: 28px;
+  }
+
   .advantages__item-content {
-    padding: 50px 30px 35px 30px;
+    padding: 77px 11px 76px 29px;
+  }
+
+  .advantages__item-content h2 {
+    font-size: 20px;
   }
 
   .about__container {
-    padding: 0 25px 80px;
+    padding: 36px 25px 81px;
   }
 
   .about__year p {
     display: none;
   }
 
+  .about__description {
+    margin-bottom: 15px;
+  }
+
+  .about__description h2 {
+    font-size: 28px;
+    line-height: 140.62%;
+    margin-bottom: 12px;
+  }
+
+  .about__description p:nth-child(2) {
+    font-size: 14px;
+    line-height: 134.4%;
+    margin-bottom: 20px;
+  }
+
+  .about__description p:nth-child(3) {
+    font-size: 14px;
+    line-height: 134.4%;
+  }
+
+  .about__description-detail--close {
+    display: none;
+  }
+
+  .about__detail-button {
+    width: 159px;
+  }
+
+  .about__button-text {
+    padding: 7px 13px 10px 12px;
+  }
+
   .products {
     padding: 50px 25px 86px 25px;
   }
 
-  .products__container h2 {
-    margin: 0 0 40px 0;
+  .products__title {
+    display: none;
+  }
+
+  .products__title-mobile {
+    width: 97%;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    margin: 0 0 26px 0;
     font-size: 28px;
     line-height: 140.62%;
+    color: #ffffff;
+    display: block;
   }
 
   .products__item--production {
@@ -2253,21 +2323,21 @@ button,
   }
 
   .products__item a {
-    padding: 30px 0 60px 30px;
+    padding: 26px 0 60px 30px;
   }
 
   .products__item h3 {
     font-size: 18px;
     line-height: 30px;
-    width: 150px;
+    width: 135px;
   }
 
   .form__container {
-    padding: 50px 25px 90px;
+    padding: 46px 25px 88px;
   }
 
   .form__question h2 {
-    margin: 0 0 20px 0;
+    margin: 0 0 8px 0;
     font-size: 30px;
     line-height: 140.62%;
   }
@@ -2275,7 +2345,7 @@ button,
   .form__question p {
     font-size: 14px;
     line-height: 134.4%;
-    margin: 0 0 40px 0;
+    margin: 0 0 35px 0;
   }
 
   .form__question-inputs {
@@ -2289,13 +2359,18 @@ button,
     margin-bottom: 30px;
   }
 
+  .form__question-textarea textarea {
+    padding: 25px 15px 120px 15px;
+  }
+
   .form__question-submit {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 11px;
   }
 
   .form__question-check label {
     width: 100%;
+    padding: 10px 0 0 31px;
   }
 
   .footer__container {
@@ -2304,6 +2379,7 @@ button,
 
   .footer__logo-wrapper {
     padding: 35px 0 0 0;
+    margin: 0 0 20px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2312,7 +2388,7 @@ button,
 
   .footer__logo {
     width: 215px;
-    margin: 0 auto 15px;
+    margin: 0 auto 10px;
   }
 
   .footer__section-wrapper {

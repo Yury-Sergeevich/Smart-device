@@ -22,7 +22,7 @@
   }
 
   @media (max-width: 767px) {
-    padding: 80px 25px 190px 25px;
+    padding: 91px 25px 192px 25px;
   }
 }
 
@@ -47,8 +47,10 @@
 
   @media (max-width: 767px) {
     width: 100%;
-    font-size: 36px;
+    font-size: 35px;
     line-height: 42px;
+    letter-spacing: 0.2rem;
+    margin-bottom: 9px;
   }
 }
 
@@ -66,6 +68,7 @@
 
   @media (max-width: 767px) {
     font-size: 14px;
+    margin: 0 0 46px 0;
   }
 }
 

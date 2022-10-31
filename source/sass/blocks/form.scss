@@ -27,7 +27,7 @@
   }
 
   @media (max-width: 767px) {
-    padding: 50px 25px 90px;
+    padding: 46px 25px 88px;
   }
 }
 
@@ -54,7 +54,7 @@
   }
 
   @media (max-width: 767px) {
-    margin: 0 0 20px 0;
+    margin: 0 0 8px 0;
     font-size: 30px;
     line-height: 140.62%;
   }
@@ -71,7 +71,7 @@
   @media (max-width: 767px) {
     font-size: 14px;
     line-height: 134.4%;
-    margin: 0 0 40px 0;
+    margin: 0 0 35px 0;
   }
 }
 
@@ -130,6 +130,10 @@
   @media (max-width: 1023px) {
     padding: 25px 15px 95px 15px;
   }
+
+  @media (max-width: 767px) {
+    padding: 25px 15px 120px 15px;
+  }
 }
 
 .form__question-submit {
@@ -155,7 +159,7 @@
 
   @media (max-width: 767px) {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 11px;
   }
 
   &:focus {
@@ -194,6 +198,7 @@
 
   @media (max-width: 767px) {
     width: 100%;
+    padding: 10px 0 0 31px;
   }
 }
 

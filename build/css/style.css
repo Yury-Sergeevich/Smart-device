@@ -1566,7 +1566,7 @@ button,
 .form__question-check label {
   width: 275px;
   cursor: pointer;
-  padding: 0 0 0 25px;
+  padding: 0 0 0 42px;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
@@ -1863,6 +1863,9 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 
   .header__logo {
@@ -1882,7 +1885,11 @@ button,
   }
 
   .user-nav {
-    max-width: 100px;
+    width: 117px;
+  }
+
+  .user-nav__list {
+    padding: 0 0 6px 0;
   }
 
   .user-nav__list li:not(:last-child) {
@@ -1908,27 +1915,29 @@ button,
   }
 
   .promo__content {
-    padding: 80px 50px 205px 50px;
+    padding: 94px 50px 206px 50px;
   }
 
   .promo__content h2 {
     width: 670px;
     font-size: 64px;
     line-height: 75px;
-    margin: 0 0 20px 0;
+    margin: 0;
+    letter-spacing: 0.3rem;
   }
 
   .promo__content p {
     width: 100%;
-    margin: 0 0 50px 0;
+    margin: 0 0 57px 0;
   }
 
   .promo__button {
+    width: 411px;
     margin-left: 45px;
   }
 
   .promo__button-decription {
-    padding: 15px 25px;
+    padding: 16px 25px 17px 25px;
   }
 
   .advantages__container {
@@ -1939,12 +1948,42 @@ button,
     gap: 30px 29px;
   }
 
+  .advantages__item-content--stopwatch::before {
+    left: 45px;
+  }
+
+  .advantages__item-content--hired::before {
+    top: 40px;
+  }
+
+  .advantages__item-content--detective::before {
+    top: 40px;
+    left: 45px;
+  }
+
+  .advantages__item-content {
+    padding: 92px 45px 32px 45px;
+  }
+
+  .advantages__item-content h2 {
+    margin: 0 0 8px 0;
+  }
+
   .about__container {
     padding: 0 50px 80px;
   }
 
   .about__year p {
-    margin: 0 29px 0 0;
+    line-height: 168px;
+    margin: 6px 7px 0 0;
+  }
+
+  .about__description h2 {
+    line-height: 43px;
+  }
+
+  .about__description p:nth-child(2) {
+    margin-bottom: 22px;
   }
 
   .about__description p:nth-child(3) {
@@ -1956,11 +1995,15 @@ button,
   }
 
   .products {
-    padding: 60px 50px 75px 50px;
+    padding: 54px 47px 75px 50px;
   }
 
   .products__container {
     padding: 0;
+  }
+
+  .products__container h2 {
+    margin: 0 0 38px 0;
   }
 
   .products__list {
@@ -1969,8 +2012,12 @@ button,
     gap: 30px;
   }
 
+  .products__item {
+    background-size: auto;
+  }
+
   .products__item--production {
-    background-position: 29.5% 96.5%;
+    background-position: -249px -549px;
   }
 
   .products__item--montage {
@@ -1983,12 +2030,16 @@ button,
 
   .products__item a {
     min-height: 250px;
-    padding: 40px 0 60px 45px;
+    padding: 38px 0 60px 45px;
+  }
+
+  .products__item h3 {
+    width: 150px;
   }
 
   .form__container {
     display: block;
-    padding: 50px 50px 125px;
+    padding: 46px 50px 121px;
   }
 
   .form__container-image {
@@ -1996,7 +2047,7 @@ button,
   }
 
   .form__question h2 {
-    margin: 0 0 10px 0;
+    margin: 0 0 7px 0;
   }
 
   .form__question p {
@@ -2007,11 +2058,30 @@ button,
     max-width: 100%;
   }
 
+  .form__question-textarea textarea {
+    padding: 25px 15px 95px 15px;
+  }
+
+  .form__question-submit {
+    width: 265px;
+  }
+
   .form__question-check {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+  }
+
+  .form__question-check label {
+    padding: 10px 0 0 42px;
+  }
+
+  .form__question-check span {
+    margin: 6px 0 0 -25px;
   }
 
   .footer__container {
@@ -2048,10 +2118,7 @@ button,
 
   .social {
     width: 150px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 0;
+    padding: 5px 3px;
   }
 
   .section-site__wrapper {
@@ -2062,8 +2129,24 @@ button,
     gap: 0;
   }
 
+  .section-site__control-title h2 {
+    margin: 0 0 23px 0;
+  }
+
+  .section-site__item:not(:last-child) {
+    margin: 0 0 8px 0;
+  }
+
   .section-site__item {
     margin: 0 0 10px 0;
+  }
+
+  .address__control-title h2 {
+    margin: 0 0 23px 0;
+  }
+
+  .address address {
+    margin-bottom: 8px;
   }
 }
 

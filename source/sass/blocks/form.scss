@@ -23,7 +23,7 @@
 
   @media (max-width: 1023px) {
     display: block;
-    padding: 50px 50px 125px;
+    padding: 46px 50px 121px;
   }
 
   @media (max-width: 767px) {
@@ -50,7 +50,7 @@
   color: #ffffff;
 
   @media (max-width: 1023px) {
-    margin: 0 0 10px 0;
+    margin: 0 0 7px 0;
   }
 
   @media (max-width: 767px) {
@@ -126,6 +126,10 @@
   &::placeholder {
     color: #ffffff;
   }
+
+  @media (max-width: 1023px) {
+    padding: 25px 15px 95px 15px;
+  }
 }
 
 .form__question-submit {
@@ -145,6 +149,10 @@
   text-transform: uppercase;
   color: #ffffff;
 
+  @media (max-width: 1023px) {
+    width: 265px;
+  }
+
   @media (max-width: 767px) {
     width: 100%;
     margin-bottom: 25px;
@@ -163,6 +171,7 @@
   @media (max-width: 1023px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: start;
 
     @media (max-width: 767px) {
       grid-template-columns: none;
@@ -173,11 +182,15 @@
 .form__question-check label {
   width: 275px;
   cursor: pointer;
-  padding: 0 0 0 25px;
+  padding: 0 0 0 42px;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
   opacity: 0.8;
+
+  @media (max-width: 1023px) {
+    padding: 10px 0 0 42px;
+  }
 
   @media (max-width: 767px) {
     width: 100%;
@@ -205,4 +218,8 @@
   height: 15px;
   border: 1px solid #ffffff;
   border-radius: 2px;
+
+  @media (max-width: 1023px) {
+    margin: 6px 0 0 -25px;
+  }
 }

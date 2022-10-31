@@ -21,6 +21,7 @@
     padding: 20px 50px 25px 50px;
     max-width: 1023px;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   @media (max-width: 767px) {
@@ -74,7 +75,6 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #f2f5f7;
-    // padding: 12px 0 10px 0;
 
     &--order-call span {
       display: block;

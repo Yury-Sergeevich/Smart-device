@@ -3,7 +3,7 @@
   padding: 70px 0 140px 0;
 
   @media (max-width: 1023px) {
-    padding: 60px 50px 75px 50px;
+    padding: 54px 47px 75px 50px;
   }
 
   @media (max-width: 767px) {
@@ -27,6 +27,10 @@
   font-size: 36px;
   line-height: 51px;
   color: #ffffff;
+
+  @media (max-width: 1023px) {
+    margin: 0 0 38px 0;
+  }
 
   @media (max-width: 767px) {
     margin: 0 0 40px 0;
@@ -66,8 +70,10 @@
   }
 
   @media (max-width: 1023px) {
+    background-size: auto;
+
     &--production {
-      background-position: 29.5% 96.5%;
+      background-position: -249px -549px;
     }
 
     &--montage {
@@ -107,7 +113,7 @@
 
   @media (max-width: 1023px) {
     min-height: 250px;
-    padding: 40px 0 60px 45px;
+    padding: 38px 0 60px 45px;
   }
 
   @media (max-width: 767px) {
@@ -121,6 +127,10 @@
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
+
+  @media (max-width: 1023px) {
+    width: 150px;
+  }
 
   @media (max-width: 767px) {
     font-size: 18px;

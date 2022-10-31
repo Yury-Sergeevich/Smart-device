@@ -3,7 +3,7 @@
   flex-wrap: wrap;
 
   @media (max-width: 1023px) {
-    max-width: 100px;
+    width: 117px;
   }
 }
 
@@ -12,6 +12,10 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 2px 0 6px 0;
+
+  @media (max-width: 1023px) {
+    padding: 0 0 6px 0;
+  }
 }
 
 .user-nav__list li {

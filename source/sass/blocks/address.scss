@@ -51,6 +51,10 @@
   text-transform: uppercase;
   color: #ffffff;
 
+  @media (max-width: 1023px) {
+    margin: 0 0 23px 0;
+  }
+
   @media (max-width: 767px) {
     margin: 0;
   }
@@ -61,6 +65,10 @@
   line-height: 135%;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 10px;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 8px;
+  }
 
   @media (max-width: 767px) {
     font-size: 14px;

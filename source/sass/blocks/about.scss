@@ -31,7 +31,8 @@
   background-clip: text;
 
   @media (max-width: 1023px) {
-    margin: 0 29px 0 0;
+    line-height: 168px;
+    margin: 6px 7px 0 0;
   }
 
   @media (max-width: 767px) {
@@ -50,6 +51,10 @@
   font-size: 36px;
   line-height: 51px;
   color: #041827;
+
+  @media (max-width: 1023px) {
+    line-height: 43px;
+  }
 }
 
 .about__description p {
@@ -58,6 +63,10 @@
 
   &:nth-child(2) {
     margin-bottom: 25px;
+
+    @media (max-width: 1023px) {
+      margin-bottom: 22px;
+    }
   }
 
   &:nth-child(3) {

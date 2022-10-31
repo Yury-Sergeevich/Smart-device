@@ -57,6 +57,10 @@
   text-transform: uppercase;
   color: #ffffff;
 
+  @media (max-width: 1023px) {
+    margin: 0 0 23px 0;
+  }
+
   @media (max-width: 767px) {
     margin: 0;
   }
@@ -71,6 +75,10 @@
 .section-site__item {
   &:not(:last-child) {
     margin: 0 0 10px 0;
+
+    @media (max-width: 1023px) {
+      margin: 0 0 8px 0;
+    }
   }
 
   @media (max-width: 1023px) {

@@ -698,13 +698,13 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 27px 20px 35px 20px;
-  max-width: 1240px;
+  padding: 29px 20px 35px 20px;
+  max-width: 1265px;
   margin: 0 auto;
 }
 
 .header__logo {
-  margin-right: 160px;
+  margin-right: 161px;
 }
 
 .header__logo a {
@@ -716,7 +716,7 @@ button,
 }
 
 .header__user-nav {
-  margin-right: auto;
+  margin-right: 147px;
 }
 
 .header__button {
@@ -741,6 +741,10 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #f2f5f7;
+}
+
+.header__button--order-call--order-call span {
+  display: block;
 }
 
 .header__button:hover {
@@ -778,7 +782,7 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding: 2px 0 6px 0;
 }
 
 .user-nav__list li {
@@ -1029,18 +1033,18 @@ button,
 }
 
 .promo__container {
-  max-width: 1240px;
+  max-width: 1265px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .promo__content {
-  padding: 185px 0 180px 140px;
+  padding: 321px 0 280px 126px;
 }
 
 .promo__content h2 {
   width: 720px;
-  margin: 0 0 40px 0;
+  margin: 0 0 31px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 80px;
@@ -1052,7 +1056,7 @@ button,
 
 .promo__content p {
   width: 685px;
-  margin: 0 0 40px 0;
+  margin: 0 0 47px 0;
   font-size: 22px;
   line-height: 155%;
   color: #f2f5f7;
@@ -1102,7 +1106,7 @@ button,
 }
 
 .advantages__container {
-  max-width: 1262px;
+  max-width: 1265px;
   margin: 0 auto;
   padding: 120px 20px;
 }
@@ -1118,7 +1122,7 @@ button,
   grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[2];
   grid-template-rows: repeat(2, 1fr);
-  gap: 31px 30px;
+  gap: 31px 35px;
 }
 
 .advatages__item {
@@ -1167,7 +1171,7 @@ button,
 
 .advantages__item-content {
   position: relative;
-  padding: 95px 45px 35px 45px;
+  padding: 97px 45px 35px 47px;
 }
 
 .advantages__item-content--stopwatch::before {
@@ -1176,7 +1180,7 @@ button,
   width: 35px;
   height: 35px;
   top: 40px;
-  left: 45px;
+  left: 47px;
   background: url("../img/svg/stopwatch.svg") no-repeat;
 }
 
@@ -1185,18 +1189,18 @@ button,
   position: absolute;
   width: 35px;
   height: 35px;
-  top: 40px;
-  left: 45px;
+  top: 41px;
+  left: 46px;
   background: url("../img/svg/hired.svg") no-repeat;
 }
 
 .advantages__item-content--detective::before {
   content: "";
   position: absolute;
-  width: 35px;
+  width: 36px;
   height: 35px;
-  top: 40px;
-  left: 45px;
+  top: 39px;
+  left: 42px;
   background: url("../img/svg/detective.svg") no-repeat;
 }
 
@@ -1205,13 +1209,13 @@ button,
   position: absolute;
   width: 35px;
   height: 35px;
-  top: 40px;
-  left: 45px;
+  top: 39px;
+  left: 46px;
   background: url("../img/svg/tag.svg") no-repeat;
 }
 
 .advantages__item-content h2 {
-  margin: 0 0 15px 0;
+  margin: 0 0 13px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;

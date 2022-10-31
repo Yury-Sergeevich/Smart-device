@@ -1,5 +1,5 @@
 .advantages__container {
-  max-width: 1262px;
+  max-width: 1265px;
   margin: 0 auto;
   padding: 120px 20px;
 
@@ -20,7 +20,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 31px 30px;
+  gap: 31px 35px;
 
   @media (max-width: 1023px) {
     gap: 30px 29px;
@@ -75,7 +75,7 @@
 
 .advantages__item-content {
   position: relative;
-  padding: 95px 45px 35px 45px;
+  padding: 97px 45px 35px 47px;
 
   &--stopwatch {
     &::before {
@@ -84,7 +84,7 @@
       width: 35px;
       height: 35px;
       top: 40px;
-      left: 45px;
+      left: 47px;
       background: url("../img/svg/stopwatch.svg") no-repeat;
     }
   }
@@ -95,8 +95,8 @@
       position: absolute;
       width: 35px;
       height: 35px;
-      top: 40px;
-      left: 45px;
+      top: 41px;
+      left: 46px;
       background: url("../img/svg/hired.svg") no-repeat;
     }
   }
@@ -105,10 +105,10 @@
     &::before {
       content: "";
       position: absolute;
-      width: 35px;
+      width: 36px;
       height: 35px;
-      top: 40px;
-      left: 45px;
+      top: 39px;
+      left: 42px;
       background: url("../img/svg/detective.svg") no-repeat;
     }
   }
@@ -119,8 +119,8 @@
       position: absolute;
       width: 35px;
       height: 35px;
-      top: 40px;
-      left: 45px;
+      top: 39px;
+      left: 46px;
       background: url("../img/svg/tag.svg") no-repeat;
     }
   }
@@ -131,7 +131,7 @@
 }
 
 .advantages__item-content h2 {
-  margin: 0 0 15px 0;
+  margin: 0 0 13px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;

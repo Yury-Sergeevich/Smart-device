@@ -13,8 +13,8 @@
 .header__container {
   display: flex;
   align-items: center;
-  padding: 27px 20px 35px 20px;
-  max-width: 1240px;
+  padding: 29px 20px 35px 20px;
+  max-width: 1265px;
   margin: 0 auto;
 
   @media (max-width: 1023px) {
@@ -31,7 +31,7 @@
 }
 
 .header__logo {
-  margin-right: 160px;
+  margin-right: 161px;
 
   @media (max-width: 1023px) {
     margin: 0;
@@ -47,7 +47,7 @@
 }
 
 .header__user-nav {
-  margin-right: auto;
+  margin-right: 147px;
 
   @media (max-width: 1023px) {
     margin: 0;
@@ -74,6 +74,11 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #f2f5f7;
+    // padding: 12px 0 10px 0;
+
+    &--order-call span {
+      display: block;
+    }
   }
 
   @media (max-width: 1023px) {

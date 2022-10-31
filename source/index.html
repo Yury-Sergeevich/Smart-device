@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
+    <meta name="description" content="Smart Divice">
     <title>Smart Divice</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -133,11 +133,12 @@
         </section>
         <section class="main-form form">
           <div class="form__container">
-            <div class="form__form-title">
-              <h2>Остались вопросы? Задайте их нам!</h2>
-              <p>Мы проконсультируем Вас бесплатно</p>
+            <div class="form__container-image">
+              <img src="../img/background/airplane@1x.png" width="510" height="285" alt="бумажный самолет">
             </div>
             <div class="form__question">
+              <h2>Остались вопросы? Задайте их нам!</h2>
+              <p>Мы проконсультируем Вас бесплатно</p>
               <form action="https://echo.htmlacademy.ru/" method="post">
                 <div class="form__question-inputs">
                   <div class="form__question-input form__question-input--name">
@@ -147,19 +148,17 @@
                   </div>
                   <div class="form__question-input form__question-input--phone">
                     <label>
-                      <input type="phone" name="user-phone" placeholder="Имя" placeholder="Телефон">
+                      <input type="phone" name="user-phone" placeholder="Телефон" placeholder="Телефон">
                     </label>
                   </div>
                   <div class="form__question-textarea">
                     <label>
-                      <textarea name="description" cols="30" rows="10"></textarea>
+                      <textarea name="description" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
                     </label>
                   </div>
                 </div>
-                <button class="form__question-submit" type="submit">
-                  отправить
-                </button>
                 <div class="form__question-check">
+                  <button class="form__question-submit" type="submit">Задать вопрос</button>
                   <label>
                     <input type="checkbox" name="personal-data" required checked>
                     <span></span>

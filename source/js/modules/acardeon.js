@@ -5,6 +5,9 @@ const addressControlTitle = document.querySelector('.address__control-title');
 const addressWrapper = document.querySelector('.address__wrapper');
 const addressControlButton = document.querySelector('.address__control-button');
 
+sectionSiteWrapper.classList.add('section-site__wrapper--close');
+sectionSiteButton.classList.add('section-site__button--close');
+
 function openSectionSite() {
   sectionControlTitle.addEventListener('click', () => {
     if (sectionSiteWrapper.classList.contains('section-site__wrapper--close')) {
@@ -19,6 +22,9 @@ function openSectionSite() {
     }
   });
 
+  addressWrapper.classList.remove('address__wrapper--close');
+  addressControlButton.classList.remove('address__control-button--close');
+  addressControlButton.classList.add('address__control-button--open');
   addressControlTitle.addEventListener('click', () => {
     if (addressWrapper.classList.contains('address__wrapper--close')) {
       addressWrapper.classList.remove('address__wrapper--close');

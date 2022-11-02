@@ -4,7 +4,7 @@
 
 .footer__container {
   display: flex;
-  max-width: 1240px;
+  max-width: 1260px;
   margin: 0 auto;
   padding: 50px 20px 55px 20px;
 
@@ -73,7 +73,7 @@
 }
 
 .footer__section-site {
-  margin-right: 30px;
+  margin-right: 55px;
 
   @media (max-width: 767px) {
     margin: 0;

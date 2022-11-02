@@ -17,7 +17,7 @@
 .form__container {
   max-width: 1260px;
   margin: 0 auto;
-  padding: 170px 20px 250px;
+  padding: 170px 20px 245px;
   display: flex;
   justify-content: space-between;
 
@@ -43,7 +43,7 @@
 }
 
 .form__question h2 {
-  margin: 0 0 15px 0;
+  margin: 0 0 7px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   line-height: 51px;
@@ -90,7 +90,7 @@
 
 .form__question {
   width: 100%;
-  max-width: 585px;
+  max-width: 591px;
 
   @media (max-width: 1023px) {
     max-width: 100%;
@@ -117,7 +117,7 @@
 .form__question-textarea textarea {
   width: 100%;
   display: block;
-  padding: 25px 15px 0 15px;
+  padding: 25px 15px 94px 15px;
   border: none;
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
@@ -140,8 +140,8 @@
   border: none;
   background: #041427;
   border-radius: 3px;
-  padding: 15px 25px;
-  width: 275px;
+  padding: 15px 0 11px 0;
+  width: 266px;
   cursor: pointer;
   outline: none;
 
@@ -186,7 +186,7 @@
 .form__question-check label {
   width: 275px;
   cursor: pointer;
-  padding: 0 0 0 42px;
+  padding: 0 0 0 20px;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;

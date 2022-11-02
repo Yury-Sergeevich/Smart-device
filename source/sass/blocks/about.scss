@@ -1,7 +1,7 @@
 .about__container {
   max-width: 1260px;
   margin: 0 auto;
-  padding: 0 20px 100px;
+  padding: 0 20px 111px;
   display: flex;
 
   @media (max-width: 1023px) {
@@ -23,7 +23,7 @@
   font-weight: 700;
   font-size: 156px;
   line-height: 180px;
-  margin: 0 100px 0 0;
+  margin: 0 70px 0 0;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   color: transparent;
@@ -50,7 +50,7 @@
 }
 
 .about__description h2 {
-  margin: 0 0 15px 0;
+  margin: 0 0 12px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   line-height: 51px;
@@ -72,7 +72,7 @@
   color: #041827;
 
   &:nth-child(2) {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 
     @media (max-width: 1023px) {
       margin-bottom: 22px;
@@ -120,7 +120,7 @@
   border: none;
   background: transparent;
   outline: 1px solid #00b2ff;
-  margin-left: 38px;
+  margin: 0;
 
   @media (max-width: 1023px) {
     margin: 0;

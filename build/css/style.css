@@ -698,7 +698,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 29px 20px 35px 20px;
+  padding: 22px 20px 35px 20px;
   max-width: 1265px;
   margin: 0 auto;
 }
@@ -1039,7 +1039,7 @@ button,
 }
 
 .promo__content {
-  padding: 321px 0 280px 126px;
+  padding: 312px 0 280px 127px;
 }
 
 .promo__content h2 {
@@ -1233,7 +1233,7 @@ button,
 .about__container {
   max-width: 1260px;
   margin: 0 auto;
-  padding: 0 20px 100px;
+  padding: 0 20px 111px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1254,7 +1254,7 @@ button,
   font-weight: 700;
   font-size: 156px;
   line-height: 180px;
-  margin: 0 100px 0 0;
+  margin: 0 70px 0 0;
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
@@ -1273,7 +1273,7 @@ button,
 }
 
 .about__description h2 {
-  margin: 0 0 15px 0;
+  margin: 0 0 12px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   line-height: 51px;
@@ -1286,7 +1286,7 @@ button,
 }
 
 .about__description p:nth-child(2) {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .about__description p:nth-child(3) {
@@ -1304,7 +1304,7 @@ button,
   border: none;
   background: transparent;
   outline: 1px solid #00b2ff;
-  margin-left: 38px;
+  margin: 0;
 }
 
 .about__detail-button:hover {
@@ -1341,7 +1341,7 @@ button,
 
 .products {
   background: #041827;
-  padding: 70px 0 140px 0;
+  padding: 65px 0 141px 0;
 }
 
 .products__container {
@@ -1351,7 +1351,7 @@ button,
 }
 
 .products__title {
-  margin: 0 0 50px 0;
+  margin: 0 0 54px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   line-height: 51px;
@@ -1401,6 +1401,7 @@ button,
 }
 
 .products__item h3 {
+  width: 165px;
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
@@ -1428,7 +1429,7 @@ button,
 .form__container {
   max-width: 1260px;
   margin: 0 auto;
-  padding: 170px 20px 250px;
+  padding: 170px 20px 245px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1444,7 +1445,7 @@ button,
 }
 
 .form__question h2 {
-  margin: 0 0 15px 0;
+  margin: 0 0 7px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   line-height: 51px;
@@ -1467,7 +1468,7 @@ button,
 
 .form__question {
   width: 100%;
-  max-width: 585px;
+  max-width: 591px;
 }
 
 .form__question-input input {
@@ -1508,7 +1509,7 @@ button,
 .form__question-textarea textarea {
   width: 100%;
   display: block;
-  padding: 25px 15px 0 15px;
+  padding: 25px 15px 94px 15px;
   border: none;
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
@@ -1539,8 +1540,8 @@ button,
   border: none;
   background: #041427;
   border-radius: 3px;
-  padding: 15px 25px;
-  width: 275px;
+  padding: 15px 0 11px 0;
+  width: 266px;
   cursor: pointer;
   outline: none;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1571,7 +1572,7 @@ button,
 .form__question-check label {
   width: 275px;
   cursor: pointer;
-  padding: 0 0 0 42px;
+  padding: 0 0 0 20px;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
@@ -1612,7 +1613,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1240px;
+  max-width: 1260px;
   margin: 0 auto;
   padding: 50px 20px 55px 20px;
 }
@@ -1640,7 +1641,7 @@ button,
 }
 
 .footer__section-site {
-  margin-right: 30px;
+  margin-right: 55px;
 }
 
 .social {

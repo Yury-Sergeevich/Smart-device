@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {openModal} from './modules/modals/modal';
 import {openSectionSite} from './modules/acardeon';
+import {maskPhone} from './modules/validate-form';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -8,6 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
 
+  maskPhone();
   openModal();
   openSectionSite();
   iosVhFix();

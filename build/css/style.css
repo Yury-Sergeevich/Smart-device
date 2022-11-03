@@ -1478,6 +1478,7 @@ button,
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   outline: none;
+  color: #ffffff;
 }
 
 .form__question-input input::-webkit-input-placeholder {
@@ -1514,6 +1515,7 @@ button,
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   outline: none;
+  color: #ffffff;
 }
 
 .form__question-textarea textarea::-webkit-input-placeholder {
@@ -1686,6 +1688,10 @@ button,
   gap: 30px;
 }
 
+.section-site__control-title {
+  padding-top: 6px;
+}
+
 .section-site__button {
   display: none;
   background-color: transparent;
@@ -1697,7 +1703,7 @@ button,
 
 .section-site__control-title h2 {
   position: relative;
-  margin: 0 0 20px 0;
+  margin: 0 0 28px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 15px;
   line-height: 16px;

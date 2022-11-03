@@ -148,12 +148,12 @@
                 <div class="form__question-inputs">
                   <div class="form__question-input form__question-input--name">
                     <label>
-                      <input type="text" name="user-name" placeholder="Имя">
+                      <input type="text" name="user-name" data-validate-field="name" placeholder="Имя" required>
                     </label>
                   </div>
                   <div class="form__question-input form__question-input--phone">
                     <label>
-                      <input type="phone" name="user-phone" placeholder="Телефон" data-phone-pattern = '+7 (___) ___-__-__' placeholder="Телефон">
+                      <input class="phone" type="tel" name="user-phone" placeholder="Телефон" id="phone" placeholder="Телефон" required>
                     </label>
                   </div>
                   <div class="form__question-textarea">
@@ -277,7 +277,7 @@
                 <input type="text" name="user-name" id="name" placeholder="Имя" required>
               </div>
               <div class="form-call__field">
-                <input type="text" name="user-phone" placeholder="Телефон" required>
+                <input class="phone" type="tel" name="user-phone" id="phone" placeholder="Телефон" required>
               </div>
               <div class="form-call__field-description">
                 <textarea name="description" cols="30" rows="10"></textarea>
@@ -297,7 +297,7 @@
         </div>
       </div>
     </div>
-
+    <script src="https://unpkg.com/imask"></script>
     <script src="./js/main.min.js"></script>
   </body>
 </html>

@@ -19,6 +19,8 @@
 }
 
 .section-site__control-title {
+  padding-top: 6px;
+
   @media (max-width: 767px) {
     display: flex;
     justify-content: space-between;
@@ -49,7 +51,7 @@
 
 .section-site__control-title h2 {
   position: relative;
-  margin: 0 0 20px 0;
+  margin: 0 0 28px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 15px;
   line-height: 16px;

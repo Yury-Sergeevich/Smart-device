@@ -1,18 +1,20 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {openModal} from './modules/modals/modal';
 import {openSectionSite} from './modules/acardeon';
-import {maskPhone} from './modules/validate-form';
+import {maskPhone} from './modules/mask-phone';
+import {scrollTarget, handleButtonclick} from './modules/sroll';
+import {openAboutDetail} from './modules/about';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
-
   maskPhone();
   openModal();
   openSectionSite();
   iosVhFix();
+  openAboutDetail();
 
   // Modules
   // ---------------------------------
@@ -20,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
+    scrollTarget.addEventListener('click', handleButtonclick);
   });
 });
 

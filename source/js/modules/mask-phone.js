@@ -1,4 +1,3 @@
-// const inputPhone = document.getElementById('phone');
 const inputPhone = document.querySelectorAll('.phone');
 
 function maskPhone() {

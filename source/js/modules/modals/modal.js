@@ -5,6 +5,12 @@ const modalContainer = document.querySelector('.modal-container__modal');
 const nameInput = document.getElementById('name');
 
 function openModal() {
+  modalCloseButton.addEventListener('keydown', function (event) {
+    const key = event.key;
+    if (key === 27) {
+      modalWindow.classList.remove('modal-container--close');
+    }
+  });
   headerButton.addEventListener('click', function () {
     if (modalWindow.classList.contains('modal-container--close')) {
       modalWindow.classList.remove('modal-container--close');

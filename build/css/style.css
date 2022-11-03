@@ -1335,7 +1335,7 @@ button,
   color: #00b2ff;
 }
 
-.about__detail-hidden {
+.about__button-up {
   display: none;
 }
 
@@ -1398,6 +1398,28 @@ button,
   min-height: 650px;
   padding: 47px 0 60px 40px;
   background-color: rgba(4, 24, 39, 0.5);
+}
+
+.products__item a::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  right: 0;
+  background: #00b2ff;
+  border-radius: 3px 0 0 0;
+}
+
+.products__item a::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  bottom: 23px;
+  right: 19px;
+  background: url("../img/svg/arrow.svg") no-repeat;
+  border-radius: 3px 0 0 0;
 }
 
 .products__item h3 {
@@ -1477,8 +1499,8 @@ button,
   border: none;
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
-  outline: none;
   color: #ffffff;
+  outline: none;
 }
 
 .form__question-input input::-webkit-input-placeholder {

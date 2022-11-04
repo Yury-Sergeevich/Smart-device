@@ -19,7 +19,7 @@
           <a class="header__logo logo" href="index.html">
             <picture>
               <source media="(max-width: 767px )" srcset="./img/svg/logo-320.svg">
-              <img src="../img/svg/logo.svg" width="215" height="55" alt="Логотип сайта Smart Divice">
+              <img src="img/svg/logo.svg" width="215" height="55" alt="Логотип сайта Smart Divice">
             </picture>
           </a>
           <nav class="header__user-nav user-nav" aria-label="Основная.">
@@ -139,7 +139,10 @@
         <section class="main-form form">
           <div class="form__container">
             <div class="form__container-image">
-              <img src="../img/background/airplane@1x.png" width="510" height="285" alt="бумажный самолет">
+              <picture>
+                <source type="image/webp" srcset="./img/background/airplane@1x.webp 1x, ./img/background/airplane@2x.webp 2x">
+                <img src="img/background/airplane@1x.png" srcset="img/background/airplane@2x.png 2x" width="510" height="285" alt="бумажный самолет">
+              </picture>
             </div>
             <div class="form__question">
               <h2>Остались вопросы? Задайте их нам!</h2>
@@ -147,19 +150,16 @@
               <form action="https://echo.htmlacademy.ru/" method="post">
                 <div class="form__question-inputs">
                   <div class="form__question-input form__question-input--name">
-                    <label>
-                      <input type="text" name="user-name" placeholder="Имя" required>
-                    </label>
+                    <label class="visually-hidden" for="user-name">Введите Имя</label>
+                    <input type="text" name="user-name" id="user-name" placeholder="Имя" required>
                   </div>
                   <div class="form__question-input form__question-input--phone">
-                    <label>
-                      <input class="phone" type="tel" name="user-phone" placeholder="Телефон" required>
-                    </label>
+                    <label class="visually-hidden" for="user-phone"></label>
+                    <input class="phone" type="tel" id="user-phone" name="user-phone" placeholder="Телефон" required>
                   </div>
                   <div class="form__question-textarea">
-                    <label>
-                      <textarea name="description" placeholder="Ваш вопрос"></textarea>
-                    </label>
+                    <label class="visually-hidden" for="description"></label>
+                    <textarea name="description" id="description" placeholder="Ваш вопрос"></textarea>
                   </div>
                 </div>
                 <div class="form__question-check">
@@ -179,7 +179,7 @@
         <div class="footer__container">
           <div class="footer__logo-wrapper">
             <a class="footer__logo" href="index.html">
-              <img src="../img/svg/logo.svg" width="215"  height="55" alt="Логотип сайта Smart Divice">
+              <img src="img/svg/logo.svg" width="215"  height="55" alt="Логотип сайта Smart Divice">
             </a>
             <ul class="footer__social-list social">
               <li class="social__item">

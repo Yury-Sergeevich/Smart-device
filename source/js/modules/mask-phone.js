@@ -1,3 +1,5 @@
+import IMask from 'imask';
+
 const inputPhone = document.querySelectorAll('.phone');
 
 function maskPhone() {

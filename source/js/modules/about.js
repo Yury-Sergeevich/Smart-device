@@ -6,10 +6,10 @@ function openAboutDetail() {
   aboutButton.addEventListener('click', function () {
     if (aboutDetail.classList.contains('about__detail--close')) {
       aboutDetail.classList.remove('about__detail--close');
-      buttonText.classList.add('about__button-text--more-details');
+      buttonText.textContent = 'Свернуть';
     } else {
       aboutDetail.classList.add('about__detail--close');
-      // buttonText.classList.remove('about__button-text--roll-up');
+      buttonText.textContent = 'Подробнее';
     }
   });
 }

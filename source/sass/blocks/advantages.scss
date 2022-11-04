@@ -31,24 +31,12 @@
   }
 }
 
-.advatages__item {
+.advantages__item {
   position: relative;
   cursor: pointer;
   outline: 1px solid #ebebeb;
   min-height: 300px;
   transition: 0.2s ease-in;
-
-  &--active {
-    background: #00b2ff;
-
-    .advantages__item-content h2 {
-      color: #f2f5f7;
-    }
-
-    .advantages__item-content p {
-      color: #f2f5f7;
-    }
-  }
 
   &:hover {
     background: #00b2ff;

@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Smart Divice">
-    <title>Smart Divice</title>
+    <link rel="preload" href="./fonts/PTMono-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Roboto-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <title>Smart Divice</title>
   </head>
   <body>
     <div class="wrapper">
+      <h2 class="visually-hidden">Smart Divice - умные тиехнологии</h2>
       <header class="wrapper__header header">
         <div class="header__container">
-          <div class="header__logo logo">
-            <a href="index.html">
-              <picture>
-                <source media="(max-width: 767px )" srcset="./img/svg/logo-320.svg">
-                <img src="../img/svg/logo.svg" width="215" height="55" alt="Логотип сайта Smart Divice">
-              </picture>
-            </a>
-          </div>
+          <a class="header__logo logo" href="index.html">
+            <picture>
+              <source media="(max-width: 767px )" srcset="./img/svg/logo-320.svg">
+              <img src="../img/svg/logo.svg" width="215" height="55" alt="Логотип сайта Smart Divice">
+            </picture>
+          </a>
           <nav class="header__user-nav user-nav" aria-label="Основная.">
             <ul class="user-nav__list">
               <li class="user-nav__item">
@@ -40,9 +42,7 @@
               </li>
             </ul>
           </nav>
-          <button class="header__button header__button--order-call" type="button">
-            <span>заказaть звонок</span>
-          </button>
+          <button class="header__button header__button--order-call" type="button">заказaть звонок</button>
         </div>
       </header>
       <main class="wrapper__main main">
@@ -63,25 +63,25 @@
           <h2 class="visually-hidden">Преимущества</h2>
           <div class="advantages__container">
             <ul class="advantages__list">
-              <li class="advatages__item advatages__item--active">
+              <li class="advantages__item">
                 <div class="advantages__item-content advantages__item-content--stopwatch">
                   <h2>Оперативные сроки </h2>
                   <p>Усовершенствованная логистическая система позволяет&nbsp;нам просчитывать&nbsp;стоимость, производить&nbsp;и&nbsp;доставлять заказы плат и комплектующих&nbsp;в самые короткие сроки</p>
                 </div>
               </li>
-              <li class="advatages__item">
+              <li class="advantages__item">
                 <div class="advantages__item-content advantages__item-content--hired">
                   <h2>Крупные поставщики</h2>
                   <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.</p>
                 </div>
               </li>
-              <li class="advatages__item">
+              <li class="advantages__item">
                 <div class="advantages__item-content advantages__item-content--detective">
                   <h2>Полная конфиденциальность</h2>
                   <p>По желанию клиента&nbsp; мы обеспечиваем полную конфиденциальность.</p>
                 </div>
               </li>
-              <li class="advatages__item">
+              <li class="advantages__item">
                 <div class="advantages__item-content advantages__item-content--tag">
                   <h2>Персонализация стоимости</h2>
                   <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
@@ -178,9 +178,9 @@
       <footer class="footer">
         <div class="footer__container">
           <div class="footer__logo-wrapper">
-            <div class="footer__logo">
+            <a class="footer__logo" href="index.html">
               <img src="../img/svg/logo.svg" width="215"  height="55" alt="Логотип сайта Smart Divice">
-            </div>
+            </a>
             <ul class="footer__social-list social">
               <li class="social__item">
                 <a href="#">
@@ -274,13 +274,19 @@
             <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
             <form class="modal__order-call form-call" action="https://echo.htmlacademy.ru/" method="post">
               <div class="form-call__field">
-                <input type="text" name="user-name" id="name" placeholder="Имя" required>
+                <label>
+                  <input type="text" name="user-name" id="name" placeholder="Имя" required>
+                </label>
               </div>
               <div class="form-call__field">
-                <input class="phone" type="tel" name="user-phone" placeholder="Телефон" required>
+                <label>
+                  <input class="phone" type="tel" name="user-phone" placeholder="Телефон" required>
+                </label>
               </div>
               <div class="form-call__field-description">
-                <textarea name="description" cols="30" rows="10"></textarea>
+                <label>
+                  <textarea name="description" cols="30" rows="10"></textarea>
+                </label>
               </div>
               <button class="form-call__button-submit" type="submit">
                 отправить
@@ -297,7 +303,6 @@
         </div>
       </div>
     </div>
-    <script src="https://unpkg.com/imask"></script>
     <script src="./js/main.min.js"></script>
   </body>
 </html>

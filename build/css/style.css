@@ -1767,12 +1767,11 @@ button,
 }
 
 .address__control-button {
-  display: none;
-  background-color: transparent;
   border: none;
   padding: 0;
   width: 15px;
   height: 15px;
+  background: url("../img/svg/plus.svg") no-repeat;
 }
 
 .address__control-title h2 {
@@ -2479,11 +2478,6 @@ button,
   .address__control-button--open {
     display: block;
     background: url("../img/svg/minus.svg") no-repeat;
-  }
-
-  .address__control-button--close {
-    display: block;
-    background: url("../img/svg/plus.svg") no-repeat;
   }
 
   .address__control-title h2 {

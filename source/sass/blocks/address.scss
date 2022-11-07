@@ -21,22 +21,16 @@
 }
 
 .address__control-button {
-  display: none;
-  background-color: transparent;
   border: none;
   padding: 0;
   width: 15px;
   height: 15px;
+  background: url("../img/svg/plus.svg") no-repeat;
 
   @media (max-width: 767px) {
     &--open {
       display: block;
       background: url("../img/svg/minus.svg") no-repeat;
-    }
-
-    &--close {
-      display: block;
-      background: url("../img/svg/plus.svg") no-repeat;
     }
   }
 }

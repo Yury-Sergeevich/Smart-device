@@ -23,7 +23,6 @@ function openSectionSite() {
   });
 
   addressWrapper.classList.remove('address__wrapper--close');
-  addressControlButton.classList.remove('address__control-button--close');
   addressControlButton.classList.add('address__control-button--open');
   addressControlTitle.addEventListener('click', () => {
     if (addressWrapper.classList.contains('address__wrapper--close')) {

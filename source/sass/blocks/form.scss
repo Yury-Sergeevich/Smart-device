@@ -142,7 +142,7 @@
   border: none;
   background: #041427;
   border-radius: 3px;
-  padding: 15px 0 11px 0;
+  padding: 15px 0 13px 0;
   width: 266px;
   cursor: pointer;
   outline: none;
@@ -164,12 +164,18 @@
     margin-bottom: 11px;
   }
 
+  &:hover {
+    background: rgba(4, 20, 39, 0.7);
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+  }
+
   &:focus {
     outline: 1px solid #ffffff;
   }
 }
 
 .form__question-check {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -202,6 +208,18 @@
     width: 100%;
     padding: 10px 0 0 31px;
   }
+
+  &:hover span {
+    border: 1px solid #006793;
+  }
+
+  &:active span {
+    border: 1px solid #4392b4;
+  }
+
+  &:focus-within span {
+    border: 1px solid #134e68;
+  }
 }
 
 .form__question-check input {
@@ -212,14 +230,15 @@
   &:checked + span {
     background: url("../img/svg/check-yes.svg");
     background-repeat: no-repeat;
-    background-position: 50% 45%;
+    background-position: 45% 45%;
     background-size: 10px 7px;
   }
 }
 
 .form__question-check span {
-  margin: 0 0 0 -20px;
+  margin: 0 0 0 -25px;
   position: absolute;
+  top: 23px;
   box-sizing: border-box;
   width: 15px;
   height: 15px;
@@ -230,3 +249,13 @@
     margin: 6px 0 0 -25px;
   }
 }
+
+// .form__question-check label input + span {
+//   &:hover {
+//     border: 1px solid red;
+//   }
+
+//   &:active {
+//     background: #ffffff;
+//   }
+// }

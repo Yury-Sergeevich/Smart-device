@@ -705,13 +705,10 @@ button,
 
 .header__logo {
   margin-right: 161px;
-}
-
-.header__logo a {
   outline: none;
 }
 
-.header__logo a:focus {
+.header__logo:focus {
   outline: 1px solid #358cbe;
 }
 
@@ -1300,8 +1297,15 @@ button,
 
 .about__detail-button:active {
   background: #008ac5;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  -webkit-box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6);
+  box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+
+.about__detail-button:focus .about__button-text {
+  background: #179ed7;
+  -webkit-box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  color: #ffffff;
 }
 
 .about__button-text {
@@ -1375,6 +1379,7 @@ button,
 }
 
 .products__item a {
+  outline: none;
   position: relative;
   display: block;
   min-height: 650px;
@@ -1402,6 +1407,10 @@ button,
   right: 19px;
   background: url("../img/svg/arrow.svg") no-repeat;
   border-radius: 3px 0 0 0;
+}
+
+.products__item a:focus {
+  outline: 1px solid #358cbe;
 }
 
 .products__item h3 {
@@ -1546,7 +1555,7 @@ button,
   border: none;
   background: #041427;
   border-radius: 3px;
-  padding: 15px 0 11px 0;
+  padding: 15px 0 13px 0;
   width: 266px;
   cursor: pointer;
   outline: none;
@@ -1559,11 +1568,18 @@ button,
   color: #ffffff;
 }
 
+.form__question-submit:hover {
+  background: rgba(4, 20, 39, 0.7);
+  -webkit-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+}
+
 .form__question-submit:focus {
   outline: 1px solid #ffffff;
 }
 
 .form__question-check {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1585,6 +1601,18 @@ button,
   opacity: 0.8;
 }
 
+.form__question-check label:hover span {
+  border: 1px solid #006793;
+}
+
+.form__question-check label:active span {
+  border: 1px solid #4392b4;
+}
+
+.form__question-check label:focus-within span {
+  border: 1px solid #134e68;
+}
+
 .form__question-check input {
   position: absolute;
   -webkit-appearance: none;
@@ -1596,13 +1624,14 @@ button,
 .form__question-check input:checked + span {
   background: url("../img/svg/check-yes.svg");
   background-repeat: no-repeat;
-  background-position: 50% 45%;
+  background-position: 45% 45%;
   background-size: 10px 7px;
 }
 
 .form__question-check span {
-  margin: 0 0 0 -20px;
+  margin: 0 0 0 -25px;
   position: absolute;
+  top: 23px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 15px;
@@ -1723,7 +1752,7 @@ button,
   margin-bottom: 10px;
 }
 
-.nav__item a {
+.nav__link {
   display: block;
   font-family: "PT Mono", "Arial", sans-serif;
   line-height: 135%;
@@ -1734,15 +1763,15 @@ button,
   outline: none;
 }
 
-.nav__item a:hover {
+.nav__link:hover {
   color: #00b3ff;
 }
 
-.nav__item a:active {
+.nav__link:active {
   color: #018cc7;
 }
 
-.nav__item a:focus {
+.nav__link:focus {
   outline: 1px solid #018cc7;
 }
 
@@ -2295,6 +2324,16 @@ button,
     padding: 26px 0 60px 30px;
   }
 
+  .products__item a::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .products__item a::after {
+    bottom: 14px;
+    right: 11px;
+  }
+
   .products__item h3 {
     font-size: 18px;
     line-height: 30px;
@@ -2421,10 +2460,6 @@ button,
 
   .accordion__btn--open {
     background: url("../img/svg/minus.svg") no-repeat center right;
-  }
-
-  .accordion__btn:focus {
-    border: 1px solid rgb(145, 30, 30);
   }
 
   .open {

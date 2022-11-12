@@ -118,6 +118,7 @@
 }
 
 .products__item a {
+  outline: none;
   position: relative;
   display: block;
   min-height: 650px;
@@ -142,6 +143,11 @@
     right: 0;
     background: #00b2ff;
     border-radius: 3px 0 0 0;
+
+    @media (max-width: 767px) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &::after {
@@ -153,6 +159,15 @@
     right: 19px;
     background: url("../img/svg/arrow.svg") no-repeat;
     border-radius: 3px 0 0 0;
+
+    @media (max-width: 767px) {
+      bottom: 14px;
+      right: 11px;
+    }
+  }
+
+  &:focus {
+    outline: 1px solid #358cbe;
   }
 }
 

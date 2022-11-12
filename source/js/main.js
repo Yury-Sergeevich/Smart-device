@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {openModal} from './modules/modals/modal';
-import {accordeonInit} from './modules/accordeon';
+import {initAccordion, accContent} from './modules/accordeon';
 import {maskPhone} from './modules/mask-phone';
 import {scrollTarget, handleButtonclick} from './modules/sroll';
 import {openAboutDetail} from './modules/about';
@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
   maskPhone();
   openModal();
-  accordeonInit();
+  initAccordion(accContent);
   iosVhFix();
   openAboutDetail();
 

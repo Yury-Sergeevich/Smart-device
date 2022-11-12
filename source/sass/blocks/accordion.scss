@@ -1,0 +1,31 @@
+.no-js {
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+.accordion__body {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.accordion__btn {
+  @media (max-width: 767px) {
+    background: url("../img/svg/plus.svg") no-repeat center right;
+
+    &--open {
+      background: url("../img/svg/minus.svg") no-repeat center right;
+    }
+
+    &:focus {
+      border: 1px solid rgb(145, 30, 30);
+    }
+  }
+}
+
+.open {
+  @media (max-width: 767px) {
+    display: block;
+  }
+}

@@ -1267,13 +1267,10 @@ button,
 .about__description p {
   margin: 0;
   color: #041827;
-}
-
-.about__description p:nth-child(2) {
   margin-bottom: 22px;
 }
 
-.about__description p:nth-child(3) {
+.about__description p + p {
   margin-bottom: 25px;
 }
 
@@ -1969,11 +1966,11 @@ button,
     line-height: 43px;
   }
 
-  .about__description p:nth-child(2) {
+  .about__description p {
     margin-bottom: 22px;
   }
 
-  .about__description p:nth-child(3) {
+  .about__description p + p {
     margin: 0;
   }
 
@@ -2241,13 +2238,13 @@ button,
     margin-bottom: 12px;
   }
 
-  .about__description p:nth-child(2) {
+  .about__description p {
     font-size: 14px;
     line-height: 134.4%;
     margin-bottom: 20px;
   }
 
-  .about__description p:nth-child(3) {
+  .about__description p + p {
     font-size: 14px;
     line-height: 134.4%;
   }

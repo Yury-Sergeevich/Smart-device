@@ -2381,6 +2381,10 @@ button,
     padding: 10px 0 0 31px;
   }
 
+  .form__question-check span {
+    top: 66px;
+  }
+
   .footer__container {
     padding: 0;
   }

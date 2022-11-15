@@ -1,23 +1,8 @@
 function initAccordion() {
   const accContent = document.querySelectorAll('.accordion__body');
   const accButtons = document.querySelectorAll('.accordion__btn');
-  const navlinks = document.querySelectorAll('.accordion__btn');
 
   accContent.forEach((item) => item.classList.remove('no-js'));
-
-  function setTabindex() {
-    navlinks.forEach((navlink) => navlink.setAttribute('tabindex', '-1'));
-  }
-
-  function removeTabindex() {
-    navlinks.forEach((navlink) => navlink.removeAttribute('tabindex'));
-  }
-
-  if (screen.width < 768) {
-    setTabindex();
-  } else {
-    removeTabindex();
-  }
 
   accButtons.forEach((item) => {
     item.addEventListener('click', () => {

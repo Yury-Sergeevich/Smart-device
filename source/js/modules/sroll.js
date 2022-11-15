@@ -1,4 +1,4 @@
-const scrollTarget = document.querySelector('.promo__button-decription');
+const scrollTarget = document.querySelectorAll('.promo__button-decription');
 const form = document.querySelector('.form__question');
 
 function handleButtonclick() {

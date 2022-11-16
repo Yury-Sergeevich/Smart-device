@@ -834,7 +834,7 @@ button,
   background-image: url("../img/svg/modal-close.svg");
   background-repeat: no-repeat;
   background-position: center;
-  cursor: text;
+  cursor: pointer;
   outline: none;
   -webkit-transition: 0.3s ease-in;
   -o-transition: 0.3s ease-in;
@@ -879,7 +879,7 @@ button,
   padding: 15px;
   width: 100%;
   font-size: 16px;
-  cursor: pointer;
+  cursor: text;
   margin-bottom: 20px;
   outline: none;
   color: #ffffff;
@@ -924,7 +924,7 @@ button,
   padding: 15px;
   width: 100%;
   font-size: 16px;
-  cursor: pointer;
+  cursor: text;
   margin-bottom: 25px;
   outline: none;
 }
@@ -975,6 +975,10 @@ button,
   color: #ffffff;
 }
 
+.form-call__button-submit:hover {
+  background: #000000;
+}
+
 .form-call__button-submit:focus {
   outline: 1px solid #ffffff;
 }
@@ -986,6 +990,18 @@ button,
   line-height: 16px;
   color: #ffffff;
   opacity: 0.8;
+}
+
+.form-call__input-check label:hover span {
+  border: 1px solid #006793;
+}
+
+.form-call__input-check label:active span {
+  border: 1px solid #4392b4;
+}
+
+.form-call__input-check label:focus-within span {
+  border: 1px solid #134e68;
 }
 
 .form-call__input-check input {
@@ -2095,6 +2111,7 @@ button,
 
   .form__question-check span {
     margin: 6px 0 0 -25px;
+    top: 12px;
   }
 
   .footer__container {
@@ -2499,6 +2516,12 @@ button,
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background/promo-background@2x.jpg");
     background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background/promo-background@2x.jpg");
     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background/promo-background@2x.jpg");
+  }
+
+  .about__year p {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/background/about-background@2x.png");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/background/about-background@2x.png");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/background/about-background@2x.png");
   }
 
   .products__item {

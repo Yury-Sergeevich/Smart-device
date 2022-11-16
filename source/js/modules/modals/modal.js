@@ -5,13 +5,13 @@ const modalContainer = document.querySelector('.modal-container__modal');
 const nameInput = document.getElementById('name');
 
 function openModal() {
-  modalCloseButton.addEventListener('keydown', function (event) {
-    const key = event.key;
-    if (key === 27) {
-      modalWindow.classList.remove('modal-container--close');
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      modalWindow.classList.add('modal-container--close');
     }
   });
   headerButton.addEventListener('click', function () {
+    document.body.style.overflow = 'hidden';
     if (modalWindow.classList.contains('modal-container--close')) {
       modalWindow.classList.remove('modal-container--close');
       nameInput.focus();
@@ -22,10 +22,12 @@ function openModal() {
 
   modalCloseButton.addEventListener('click', function () {
     modalWindow.classList.add('modal-container--close');
+    document.body.style.overflow = '';
   });
 
   modalWindow.addEventListener('click', function () {
     modalWindow.classList.add('modal-container--close');
+    document.body.style.overflow = '';
   });
 
   modalContainer.addEventListener('click', (event) => {

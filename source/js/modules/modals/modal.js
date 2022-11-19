@@ -6,7 +6,9 @@ const focusableElements = 'input, textarea, button, [tabindex]:not([tabindex="-1
 const firstFocusableElement = document.getElementById('name');
 const focusableContent = modalWindow.querySelectorAll(focusableElements);
 const lastFocusableElement = focusableContent[focusableContent.length - 1];
-
+const textareaElement = focusableContent[focusableContent.length - 4];
+const inputCheck = focusableContent[focusableContent.length - 2];
+const buttonSubmit = focusableContent[focusableContent.length - 3];
 
 function escClose() {
   document.addEventListener('keydown', (e) => {
@@ -30,8 +32,24 @@ function focusable() {
         e.preventDefault();
       }
     } else {
-      if (document.activeElement === lastFocusableElement) {
-        firstFocusableElement.focus();
+      if (document.activeElement === textareaElement) {
+        inputCheck.focus();
+        e.preventDefault();
+      } else {
+        if (document.activeElement === inputCheck) {
+          buttonSubmit.focus();
+          e.preventDefault();
+        } else {
+          if (document.activeElement === buttonSubmit) {
+            lastFocusableElement.focus();
+            e.preventDefault();
+          } else {
+            if (document.activeElement === lastFocusableElement) {
+              firstFocusableElement.focus();
+              e.preventDefault();
+            }
+          }
+        }
       }
     }
   });
@@ -62,7 +80,6 @@ function openModal() {
   });
 
   modalContainer.addEventListener('click', (event) => {
-    lastFocusableElement.focus();
     event.stopPropagation();
   });
 }

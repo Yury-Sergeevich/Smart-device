@@ -31,6 +31,10 @@
   }
 }
 
+.form-call__field-description {
+  margin-bottom: 25px;
+}
+
 .form-call__field-description textarea {
   border: none;
   background: rgba(4, 20, 39, 0.15);
@@ -39,7 +43,7 @@
   width: 100%;
   font-size: 16px;
   cursor: text;
-  margin-bottom: 25px;
+  margin: 0;
   outline: none;
 
   &::placeholder {
@@ -51,7 +55,7 @@
   }
 
   &:focus {
-    outline: 2px solid #041427;
+    outline: 1px solid #000000;
   }
 }
 

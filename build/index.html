@@ -250,11 +250,8 @@
       </footer>
 
       <!-- модальное окно -->
-      <div class="modal-container modal-container--close">
+      <div class="modal-container modal-container--close" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-container__modal modal">
-          <button class="modal__close-button" type="button">
-            <span class="visually-hidden">закрыть</span>
-          </button>
           <div class="modal__content">
             <h2>Закажите звонок</h2>
             <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
@@ -284,6 +281,9 @@
                   Я согласен на обработку  персональных данных
                 </label>
               </div>
+              <button class="modal__close-button" type="button" aria-label="Закрыть">
+                <span class="visually-hidden">закрыть</span>
+              </button>
             </form>
           </div>
         </div>

@@ -805,6 +805,7 @@ button,
 }
 
 .user-nav a {
+  line-height: 18px;
   width: 225px;
   display: -webkit-box;
   display: -ms-flexbox;

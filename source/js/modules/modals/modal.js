@@ -14,6 +14,7 @@ function escClose() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       modalWindow.classList.add('modal-container--close');
+      document.body.style.overflow = '';
     }
   });
 }

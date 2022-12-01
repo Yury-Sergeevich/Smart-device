@@ -109,6 +109,14 @@
   &::placeholder {
     color: #ffffff;
   }
+
+  &:focus {
+    outline: 1px solid #ffffff;
+  }
+
+  &:hover {
+    background: rgba(4, 20, 39, 0.2);
+  }
 }
 
 .form__question-textarea {
@@ -135,6 +143,14 @@
 
   @media (max-width: 767px) {
     padding: 25px 15px 120px 15px;
+  }
+
+  &:hover {
+    background: rgba(4, 20, 39, 0.2);
+  }
+
+  &:focus {
+    outline: 1px solid #ffffff;
   }
 }
 
@@ -187,6 +203,7 @@
 
     @media (max-width: 767px) {
       grid-template-columns: none;
+      justify-content: normal;
     }
   }
 }

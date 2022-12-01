@@ -4,6 +4,7 @@
 
 .footer__container {
   display: flex;
+  flex-wrap: wrap;
   max-width: 1260px;
   margin: 0 auto;
   padding: 50px 20px 55px 20px;
@@ -21,7 +22,7 @@
 }
 
 .footer__logo-wrapper {
-  margin-right: auto;
+  margin: 0 150px 35px 0;
 
   @media (max-width: 1023px) {
     display: flex;
@@ -61,6 +62,7 @@
 
 .footer__section-wrapper {
   display: flex;
+  flex-wrap: wrap;
 
   @media (max-width: 1023px) {
     justify-content: space-between;
@@ -73,8 +75,6 @@
 }
 
 .footer__wrapper {
-  margin-right: 30px;
-
   @media (max-width: 767px) {
     width: 100%;
     border-top: 1px solid rgba(248, 253, 255, 0.7);

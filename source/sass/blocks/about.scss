@@ -133,8 +133,7 @@
   }
 
   &:hover {
-    background: #00b2ff;
-    box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    background: #0185be;
   }
 
   &:hover .about__button-text {
@@ -143,12 +142,10 @@
 
   &:active {
     background: #008ac5;
-    box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6);
   }
 
   &:focus .about__button-text {
     background: #179ed7;
-    box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     color: #ffffff;
   }
 }

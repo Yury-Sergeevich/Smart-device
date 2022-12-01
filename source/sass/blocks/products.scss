@@ -115,6 +115,10 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/background/products-image@2x.jpg");
   }
+
+  &:hover {
+    transform: scale(0.9);
+  }
 }
 
 .products__item a {

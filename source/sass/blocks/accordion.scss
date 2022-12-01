@@ -17,6 +17,10 @@
     &--open {
       background: url("../img/svg/minus.svg") no-repeat center right;
     }
+
+    &--btn-nojs {
+      background: none;
+    }
   }
 }
 

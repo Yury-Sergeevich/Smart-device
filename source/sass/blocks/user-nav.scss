@@ -1,5 +1,6 @@
 .user-nav {
   max-width: 480px;
+  margin-right: auto;
   flex-wrap: wrap;
 
   @media (max-width: 1023px) {
@@ -19,6 +20,7 @@
 
   @media (max-width: 1023px) {
     padding: 0 0 6px 0;
+    flex-wrap: nowrap;
   }
 
   @media (max-width: 767px) {
@@ -28,14 +30,7 @@
 
 .user-nav__list li {
   display: flex;
-
-  &:not(:last-child) {
-    margin-right: 28px;
-
-    @media (max-width: 1023px) {
-      margin-right: 20px;
-    }
-  }
+  width: 225px;
 }
 
 .user-nav a {
@@ -53,10 +48,6 @@
 
   @media (max-width: 767px) {
     padding: 7px 9px;
-  }
-
-  &:hover {
-    background: #1457aa99;
   }
 
   &:active {
@@ -82,5 +73,9 @@
 
   @media (max-width: 1023px) {
     display: none;
+  }
+
+  &:hover {
+    color: #358cbe;
   }
 }

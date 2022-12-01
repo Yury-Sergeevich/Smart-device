@@ -2,7 +2,7 @@ function initAccordion() {
   const accContent = document.querySelectorAll('.accordion__body');
   const accButtons = document.querySelectorAll('.accordion__btn');
 
-  accContent.forEach((item) => item.classList.remove('no-js'));
+  accContent.forEach((item) => item.classList.remove('open'));
 
   accButtons.forEach((item) => {
     item.addEventListener('click', () => {

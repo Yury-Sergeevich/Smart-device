@@ -34,9 +34,14 @@
 .header__logo {
   margin-right: 161px;
   outline: none;
+  cursor: default;
 
   @media (max-width: 1023px) {
     margin: 0;
+  }
+
+  &:active:not(:focus) {
+    outline: none;
   }
 
   &:focus {
@@ -63,6 +68,8 @@
 
   &--order-call {
     min-width: 160px;
+    max-width: 160px;
+    padding: 10px 15px;
     background: transparent;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: 700;

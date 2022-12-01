@@ -20,6 +20,10 @@
     display: flex;
     flex-direction: column;
   }
+
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+  }
 }
 
 
@@ -32,17 +36,11 @@
 
 .nav__item {
   margin-bottom: 10px;
-
-  @media (max-width: 767px) {
-    &:last-child {
-      margin-bottom: 20px;
-    }
-  }
 }
 
 .nav__link {
-  display: block;
-  font-family: "PT Mono", "Arial", sans-serif;
+  display: inline-block;
+  font-family: "PTMono", "Arial", sans-serif;
   line-height: 135%;
   color: rgba(255, 255, 255, 0.7);
   transition: ease-in-out 0.3s;
@@ -54,6 +52,10 @@
 
   &:active {
     color: #018cc7;
+
+    &:not(:focus) {
+      outline: none;
+    }
   }
 
   &:focus {

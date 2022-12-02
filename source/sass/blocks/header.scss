@@ -13,7 +13,7 @@
 .header__container {
   display: flex;
   align-items: center;
-  padding: 22px 20px 35px 20px;
+  padding: 30px 20px 35px 20px;
   max-width: 1265px;
   margin: 0 auto;
 
@@ -32,7 +32,7 @@
 }
 
 .header__logo {
-  margin-right: 161px;
+  margin-right: auto;
   outline: none;
   cursor: default;
 
@@ -69,6 +69,7 @@
   &--order-call {
     min-width: 160px;
     max-width: 160px;
+    margin-right: 62px;
     padding: 10px 15px;
     background: transparent;
     font-family: "Roboto Condensed", "Arial", sans-serif;

@@ -1,5 +1,6 @@
 .address {
   width: 317px;
+  padding: 10px 0 0 0;
 
   @media (max-width: 1023px) {
     width: 320px;
@@ -18,8 +19,8 @@
 .address__item {
   display: inline-block;
   width: fit-content;
-  margin: 0 0 10px 0;
-  font-family: "PT Mono", "Arial", sans-serif;
+  margin: 0;
+  font-family: "PTMono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

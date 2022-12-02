@@ -722,13 +722,13 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 22px 20px 35px 20px;
+  padding: 30px 20px 35px 20px;
   max-width: 1265px;
   margin: 0 auto;
 }
 
 .header__logo {
-  margin-right: 161px;
+  margin-right: auto;
   outline: none;
   cursor: default;
 }
@@ -759,6 +759,7 @@ button,
 .header__button--order-call {
   min-width: 160px;
   max-width: 160px;
+  margin-right: 62px;
   padding: 10px 15px;
   background: transparent;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -795,7 +796,7 @@ button,
 }
 
 .user-nav {
-  max-width: 480px;
+  width: 480px;
   margin-right: auto;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -805,6 +806,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
@@ -1066,7 +1070,7 @@ button,
 }
 
 .main__promo {
-  margin-top: -15px;
+  margin-top: -5px;
 }
 
 .promo {
@@ -1264,7 +1268,7 @@ button,
 .about__container {
   max-width: 1260px;
   margin: 0 auto;
-  padding: 0 20px 111px;
+  padding: 0 20px 102px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1327,7 +1331,10 @@ button,
 }
 
 .about__detail-button {
-  width: 180px;
+  min-width: 180px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   cursor: pointer;
   padding: 0;
   border: none;
@@ -1371,7 +1378,7 @@ button,
 
 .products {
   background: #041827;
-  padding: 65px 0 141px 0;
+  padding: 66px 0 140px 0;
 }
 
 .products__container {
@@ -1381,6 +1388,7 @@ button,
 }
 
 .products__title {
+  font-weight: 400;
   margin: 0 0 54px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
@@ -1511,6 +1519,7 @@ button,
 .form__question h2 {
   margin: 0 0 7px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   line-height: 51px;
   color: #ffffff;
@@ -1734,7 +1743,7 @@ button,
   width: 215px;
   height: 55px;
   margin-bottom: 30px;
-  cursor: pointer;
+  cursor: default;
   outline: none;
 }
 
@@ -1796,6 +1805,8 @@ button,
 
 .nav {
   width: 470px;
+  padding: 10px;
+  margin-right: 41px;
 }
 
 .nav__list-wrapper {
@@ -1848,6 +1859,7 @@ button,
 
 .address {
   width: 317px;
+  padding: 10px 0 0 0;
 }
 
 .address__list {
@@ -1865,8 +1877,8 @@ button,
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 0 10px 0;
-  font-family: "PT Mono", "Arial", sans-serif;
+  margin: 0;
+  font-family: "PTMono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

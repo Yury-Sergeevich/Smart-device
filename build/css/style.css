@@ -1756,7 +1756,7 @@ button,
 }
 
 .footer__wrapper-title {
-  margin: 0 0 20px 0;
+  margin: 0 0 22px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 15px;
   line-height: 16px;
@@ -2007,6 +2007,10 @@ button,
     display: none;
   }
 
+  .main__promo {
+    margin-top: -15px;
+  }
+
   .promo__container {
     padding: 0;
   }
@@ -2059,11 +2063,15 @@ button,
   }
 
   .advantages__item-content {
-    padding: 92px 45px 32px 45px;
+    padding: 92px 45px 30px 45px;
   }
 
   .advantages__item-content h2 {
     margin: 0 0 8px 0;
+  }
+
+  .advantages__item-detective h2 {
+    margin: 0 0 5px 0;
   }
 
   .about__container {
@@ -2077,6 +2085,7 @@ button,
 
   .about__description h2 {
     line-height: 43px;
+    margin: 0 0 19px 0;
   }
 
   .about__description p {
@@ -2092,7 +2101,7 @@ button,
   }
 
   .products {
-    padding: 54px 47px 75px 50px;
+    padding: 55px 47px 75px 50px;
   }
 
   .products__container {
@@ -2100,7 +2109,7 @@ button,
   }
 
   .products__title {
-    margin: 0 0 38px 0;
+    margin: 0 0 37px 0;
   }
 
   .products__list {
@@ -2136,7 +2145,7 @@ button,
 
   .form__container {
     display: block;
-    padding: 46px 50px 121px;
+    padding: 46px 50px 124px;
   }
 
   .form__container-image {
@@ -2156,7 +2165,7 @@ button,
   }
 
   .form__question-textarea textarea {
-    padding: 25px 15px 95px 15px;
+    padding: 33px 15px 86px 15px;
   }
 
   .form__question-submit {
@@ -2221,6 +2230,7 @@ button,
 
   .nav {
     width: 220px;
+    padding: 0;
   }
 
   .nav__list-wrapper {
@@ -2233,8 +2243,17 @@ button,
     flex-direction: column;
   }
 
+  .nav__item {
+    margin-bottom: 8px;
+  }
+
   .address {
     width: 320px;
+    padding: 0;
+  }
+
+  .address__item {
+    margin: 0 0 4px 0;
   }
 }
 

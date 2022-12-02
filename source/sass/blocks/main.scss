@@ -1,3 +1,7 @@
 .main__promo {
   margin-top: -5px;
+
+  @media (max-width: 1023px) {
+    margin-top: -15px;
+  }
 }

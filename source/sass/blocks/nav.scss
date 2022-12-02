@@ -5,6 +5,7 @@
 
   @media (max-width: 1023px) {
     width: 220px;
+    padding: 0;
   }
 
   @media (max-width: 767px) {
@@ -38,6 +39,10 @@
 
 .nav__item {
   margin-bottom: 10px;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 8px;
+  }
 }
 
 .nav__link {

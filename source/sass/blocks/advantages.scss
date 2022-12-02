@@ -58,6 +58,10 @@
     height: 100%;
     background: #00b2ff;
   }
+
+  @media (max-width: 767px) {
+    min-height: 325px;
+  }
 }
 
 .advantages__item-content {
@@ -98,6 +102,11 @@
       @media (max-width: 1023px) {
         top: 40px;
       }
+
+      @media (max-width: 767px) {
+        top: 25px;
+        left: 28px;
+      }
     }
   }
 
@@ -127,6 +136,11 @@
       top: 39px;
       left: 46px;
       background: url("../img/svg/tag.svg") no-repeat;
+
+      @media (max-width: 767px) {
+        top: 28px;
+        left: 26px;
+      }
     }
   }
 
@@ -160,6 +174,10 @@
   @media (max-width: 1023px) {
     margin: 0 0 5px 0;
   }
+
+  @media (max-width: 767px) {
+    margin: 0 0 15px 0;
+  }
 }
 
 
@@ -168,4 +186,8 @@
   font-size: 16px;
   line-height: 135%;
   color: #041827;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
 }

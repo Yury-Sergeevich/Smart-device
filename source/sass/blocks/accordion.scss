@@ -12,7 +12,7 @@
 
 .accordion__btn {
   @media (max-width: 767px) {
-    background: url("../img/svg/plus.svg") no-repeat center right;
+    background: url("../img/svg/plus.svg") no-repeat right 18px;
 
     &--open {
       background: url("../img/svg/minus.svg") no-repeat center right;

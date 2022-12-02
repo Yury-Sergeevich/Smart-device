@@ -1988,9 +1988,8 @@ button,
   }
 
   .user-nav__list {
+    width: 100px;
     padding: 0 0 6px 0;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
   }
 
   .user-nav a {
@@ -2297,6 +2296,13 @@ button,
     padding: 0;
   }
 
+  .user-nav__list li {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 40px;
+    height: 40px;
+  }
+
   .user-nav a {
     padding: 7px 9px;
   }
@@ -2343,9 +2349,23 @@ button,
     grid-template-columns: none;
   }
 
+  .advantages__item {
+    min-height: 325px;
+  }
+
   .advantages__item-content--stopwatch::before {
     top: 28px;
     left: 28px;
+  }
+
+  .advantages__item-content--hired::before {
+    top: 25px;
+    left: 28px;
+  }
+
+  .advantages__item-content--tag::before {
+    top: 28px;
+    left: 26px;
   }
 
   .advantages__item-content {
@@ -2356,8 +2376,16 @@ button,
     font-size: 20px;
   }
 
+  .advantages__item-detective h2 {
+    margin: 0 0 15px 0;
+  }
+
+  .advantages__item-content p {
+    font-size: 14px;
+  }
+
   .about__container {
-    padding: 36px 25px 81px;
+    padding: 0 25px 81px;
   }
 
   .about__year p {
@@ -2371,13 +2399,13 @@ button,
   .about__description h2 {
     font-size: 28px;
     line-height: 140.62%;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   .about__description p {
     font-size: 14px;
     line-height: 134.4%;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 
   .about__description p + p {
@@ -2390,7 +2418,7 @@ button,
   }
 
   .about__detail-button {
-    width: 159px;
+    min-width: 159px;
   }
 
   .about__button-text {
@@ -2480,7 +2508,7 @@ button,
 
   .form__question-submit {
     width: 100%;
-    margin-bottom: 11px;
+    margin-bottom: 14px;
   }
 
   .form__question-check label {
@@ -2489,7 +2517,8 @@ button,
   }
 
   .form__question-check span {
-    top: 66px;
+    top: 71px;
+    left: 30px;
   }
 
   .footer__container {
@@ -2497,7 +2526,7 @@ button,
   }
 
   .footer__logo-wrapper {
-    padding: 35px 0 0 0;
+    padding: 34px 0 0 0;
     margin: 0 0 20px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2529,7 +2558,7 @@ button,
 
   .footer__wrapper-title {
     margin: 0;
-    padding: 20px 0;
+    padding: 20px 0 22px;
   }
 
   .footer__wrapper .footer__wrapper-title {
@@ -2566,7 +2595,7 @@ button,
   }
 
   .accordion__btn {
-    background: url("../img/svg/plus.svg") no-repeat center right;
+    background: url("../img/svg/plus.svg") no-repeat right 18px;
   }
 
   .accordion__btn--open {

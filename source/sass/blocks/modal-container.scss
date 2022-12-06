@@ -20,8 +20,10 @@
 
 .modal-container__modal {
   position: relative;
+  top: -46px;
+  left: -9px;
   margin: auto;
-  padding: 40px;
+  padding: 40px 40px 56px 40px;
   background: #00b3ff;
   border-radius: 3px;
 }

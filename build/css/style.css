@@ -701,8 +701,10 @@ button,
 
 .modal-container__modal {
   position: relative;
+  top: -46px;
+  left: -9px;
   margin: auto;
-  padding: 40px;
+  padding: 40px 40px 56px 40px;
   background: #00b3ff;
   border-radius: 3px;
 }
@@ -895,11 +897,12 @@ button,
   font-size: 30px;
   line-height: 140.62%;
   color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .modal__content p {
   margin: 0;
-  padding: 15px 20px 0 0;
+  padding: 0 20px 0 0;
   line-height: 22px;
   color: #ffffff;
 }
@@ -961,7 +964,7 @@ button,
   border: none;
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
-  padding: 15px;
+  padding: 25px 15px 110px;
   width: 100%;
   font-size: 16px;
   cursor: text;

@@ -445,6 +445,7 @@ html {
   line-height: 21.5px;
   font-family: "PTMono", "Arial", sans-serif;
   color: #041827;
+  background: #f8fdff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -1268,10 +1269,12 @@ button,
 .about__container {
   max-width: 1260px;
   margin: 0 auto;
-  padding: 0 20px 102px;
+  padding: 0 20px 116px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: url("../img/background/2022@1x.jpg") no-repeat;
+  background-position: 1.9% 0;
 }
 
 .about__content {
@@ -1282,25 +1285,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.about__year p {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 156px;
-  line-height: 180px;
-  margin: 0 70px 0 0;
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-  color: transparent;
-  background: url("../img/background/about-background.png") repeat;
-  background-position: 10% 10%;
-  -webkit-background-clip: text;
-  background-clip: text;
+  margin-left: 250px;
 }
 
 .about__description {
@@ -1312,6 +1297,7 @@ button,
   margin: 0 0 12px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
+  font-weight: 400;
   line-height: 51px;
   color: #041827;
 }
@@ -1724,15 +1710,13 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   max-width: 1260px;
   margin: 0 auto;
   padding: 50px 20px 55px 20px;
 }
 
 .footer__logo-wrapper {
-  margin: 0 150px 35px 0;
+  margin: 0 160px 35px 0;
 }
 
 .footer__logo:focus {
@@ -1804,9 +1788,9 @@ button,
 }
 
 .nav {
-  width: 470px;
-  padding: 10px;
-  margin-right: 41px;
+  width: 56%;
+  padding: 10px 0;
+  margin-right: 38px;
 }
 
 .nav__list-wrapper {
@@ -1827,7 +1811,7 @@ button,
 }
 
 .nav__item {
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .nav__link {
@@ -2083,9 +2067,8 @@ button,
     padding: 0 50px 80px;
   }
 
-  .about__year p {
-    line-height: 168px;
-    margin: 6px 7px 0 0;
+  .about__content {
+    margin-left: 175px;
   }
 
   .about__description h2 {
@@ -2146,6 +2129,11 @@ button,
 
   .products__item h3 {
     width: 150px;
+  }
+
+  .form::before {
+    -webkit-clip-path: polygon(0 100%, 0 0, 0 0);
+    clip-path: polygon(0 100%, 0 0, 0 0);
   }
 
   .form__container {
@@ -2392,10 +2380,11 @@ button,
 
   .about__container {
     padding: 0 25px 81px;
+    background: none;
   }
 
-  .about__year p {
-    display: none;
+  .about__content {
+    margin: 0;
   }
 
   .about__description {
@@ -2647,8 +2636,8 @@ button,
     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background/promo-background@2x.jpg");
   }
 
-  .about__year p {
-    background-image: url("../img/background/about-background@2x.png");
+  .about__container {
+    background-image: url("../img/background/2022@2x.jpg");
   }
 
   .products__item {

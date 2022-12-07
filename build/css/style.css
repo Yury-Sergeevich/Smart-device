@@ -2252,7 +2252,7 @@ button,
 }
 
 .footer__logo-wrapper {
-  margin: 0 160px 35px 0;
+  margin: 0 auto 35px 0;
 }
 @media (max-width: 1023px) {
   .footer__logo-wrapper {
@@ -2303,8 +2303,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  width: 70%;
 }
 @media (max-width: 1023px) {
   .footer__section-wrapper {
@@ -2408,8 +2407,8 @@ button,
 }
 
 .nav {
-  width: 56%;
-  padding: 10px 0;
+  width: 57%;
+  padding: 9px 0 10px 24px;
   margin-right: 38px;
 }
 @media (max-width: 1023px) {

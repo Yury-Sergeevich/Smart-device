@@ -3,23 +3,17 @@
   margin: 0 auto;
   padding: 0 20px 116px;
   display: flex;
-  background: url("../img/background/2022@1x.jpg") no-repeat;
+  background-image: url("../img/background/2022@1x.jpg");
+  background-repeat: no-repeat;
   background-position: 1.9% 0;
+  background-size: auto 320px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/background/2022@2x.jpg");
-    background-repeat: no-repeat;
-    background-size: 11.6% 75%;
   }
 
   @media (max-width: 1023px) {
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/background/2022@2x.jpg");
-      background-repeat: no-repeat;
-      background-size: 20.6% 68.9%;
-      background-position-y: 10%;
-      background-position-x: 6%;
-    }
+    background-position: 7.3% 0;
     padding: 0 50px 80px;
   }
 

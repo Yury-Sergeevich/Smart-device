@@ -61,10 +61,11 @@
 
 .footer__section-wrapper {
   display: flex;
-  width: 70%;
+  width: 71%;
 
   @media (max-width: 1023px) {
     justify-content: space-between;
+    width: 100%;
   }
 
   @media (max-width: 767px) {

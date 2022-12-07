@@ -2303,13 +2303,14 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70%;
+  width: 71%;
 }
 @media (max-width: 1023px) {
   .footer__section-wrapper {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 100%;
   }
 }
 @media (max-width: 767px) {

@@ -1056,7 +1056,7 @@ button,
 }
 
 .form-call__input-check input:checked + span {
-  background: url("../../img/svg/check-yes.svg");
+  background: url("../img/svg/check-yes.svg");
   background-repeat: no-repeat;
   background-position: 50% 45%;
   background-size: 10px 7px;
@@ -1946,9 +1946,6 @@ button,
   .header__container {
     padding: 20px 50px 25px 50px;
     max-width: 1023px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -1971,12 +1968,17 @@ button,
   }
 
   .user-nav {
-    width: 117px;
+    width: 90%;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
   }
 
   .user-nav__list {
-    width: 100px;
     padding: 0 0 6px 0;
+    -webkit-box-pack: inherit;
+    -ms-flex-pack: inherit;
+    justify-content: inherit;
   }
 
   .user-nav__list li {
@@ -2271,9 +2273,6 @@ button,
   .header__container {
     padding: 13px 35px 20px 26px;
     max-width: 1023px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
   }
 
   .logo {
@@ -2285,10 +2284,6 @@ button,
     height: 35px;
   }
 
-  .user-nav {
-    width: 100px;
-  }
-
   .user-nav__list {
     padding: 0;
   }
@@ -2298,6 +2293,10 @@ button,
     flex-wrap: wrap;
     width: 40px;
     height: 40px;
+  }
+
+  .user-nav__list li:not(:last-child) {
+    margin-right: 20px;
   }
 
   .user-nav a {

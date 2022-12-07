@@ -4,11 +4,8 @@
   flex-wrap: wrap;
 
   @media (max-width: 1023px) {
-    width: 117px;
-  }
-
-  @media (max-width: 767px) {
-    width: 100px;
+    width: 90%;
+    justify-content: flex-end;
   }
 }
 
@@ -20,8 +17,8 @@
   padding: 2px 0 6px 0;
 
   @media (max-width: 1023px) {
-    width: 100px;
     padding: 0 0 6px 0;
+    justify-content: inherit;
   }
 
   @media (max-width: 767px) {
@@ -43,6 +40,12 @@
     flex-wrap: wrap;
     width: 40px;
     height: 40px;
+  }
+}
+
+.user-nav__list li:not(:last-child) {
+  @media (max-width: 767px) {
+    margin-right: 20px;
   }
 }
 
